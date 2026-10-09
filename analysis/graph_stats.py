@@ -35,6 +35,16 @@ def md5(path):
     return h.hexdigest()
 
 
+def log_last_timestamp() -> dt.datetime:
+    """Timestamp of the last timestamped line of the server log."""
+    ts_re = re.compile(r"^(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}),\d+ - ")
+    for line in reversed(LOG.read_text(errors="replace").splitlines()):
+        m = ts_re.match(line)
+        if m:
+            return dt.datetime.strptime(m.group(1), "%Y-%m-%d %H:%M:%S")
+    raise RuntimeError(f"no timestamped line in {LOG}")
+
+
 def local(ts: int | float | None) -> str:
     if not ts:
         return ""
@@ -148,12 +158,19 @@ def main() -> None:
     failed = [d for d in docs if d["status"] != "processed"]
     for i, d in enumerate(processed, 1):
         d["id"] = f"D{i:02d}"
-    pdf_files = sorted((REPO / "inputs").rglob("*.pdf"))
-    pdf_distinct = len({md5(p) for p in pdf_files})
+    inputs = REPO / "inputs"
+    inventory_path = DATA / "inputs_inventory.json"
+    pdf_files = sorted(inputs.rglob("*.pdf")) if inputs.is_dir() else []
+    if pdf_files:
+        inventory = [dict(path=str(f.relative_to(inputs)), bytes=f.stat().st_size, md5=md5(f)) for f in pdf_files]
+        inventory_path.write_text(json.dumps(inventory, indent=1))
+    else:  # published copy: the corpus PDFs are not redistributed, only their inventory
+        inventory = json.loads(inventory_path.read_text())
+    pdf_distinct = len({x["md5"] for x in inventory})
     failed_font = sum(1 for d in failed if "DescendantFonts" in d["error"])
     failed_dup = sum(1 for d in failed if "Identical content" in d["error"])
     S["corpus"] = dict(
-        pdf_files=len(pdf_files), pdf_distinct=pdf_distinct, queued=len(docs),
+        pdf_files=len(inventory), pdf_distinct=pdf_distinct, queued=len(docs),
         processed=len(processed), failed=len(failed), failed_font=failed_font,
         failed_duplicate=failed_dup, chunks=len(tc), tokens=sum(chunk_tokens),
         tokens_mean=statistics.mean(chunk_tokens), tokens_min=min(chunk_tokens),
@@ -188,6 +205,8 @@ def main() -> None:
 
     # ------------------------------------------------------------ cache --
     cache = load_kv("llm_response_cache")
+    log_end = log_last_timestamp()
+    cache = {k: r for k, r in cache.items() if dt.datetime.fromtimestamp(int(r["create_time"])) <= log_end}
     by_type = Counter(r.get("cache_type") for r in cache.values())
     extract_chunks = {r.get("chunk_id") for r in cache.values() if r.get("cache_type") == "extract"}
     S["cache"] = dict(total=len(cache), by_type=dict(by_type), extract_chunks=len(extract_chunks),
