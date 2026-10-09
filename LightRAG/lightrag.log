@@ -37128,3 +37128,18 @@ lightrag.llm.claude_agent_sdk.ClaudeAgentSDKError: C[13/21]: doc-a503621d914a716
 2026-10-09 14:37:58,287 - lightrag - INFO - Find 46 additional chunks in 37 relations (deduplicated 0)
 2026-10-09 14:37:58,287 - lightrag - INFO - Round-robin merged chunks: 0 -> 0 (deduplicated 0)
 2026-10-09 14:37:58,294 - lightrag - INFO - Final context: 26 entities, 137 relations, 0 chunks
+2026-10-09 18:39:15,425 - uvicorn.error - INFO - Shutting down
+2026-10-09 18:39:15,539 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-10-09 18:39:15,547 - lightrag - INFO - extract LLM func: Shutting down priority queue workers
+2026-10-09 18:39:15,548 - lightrag - INFO - extract LLM func: Priority queue workers shutdown complete
+2026-10-09 18:39:15,548 - lightrag - INFO - keyword LLM func: Shutting down priority queue workers
+2026-10-09 18:39:15,553 - lightrag - INFO - keyword LLM func: Priority queue workers shutdown complete
+2026-10-09 18:39:15,554 - lightrag - INFO - query LLM func: Shutting down priority queue workers
+2026-10-09 18:39:15,556 - lightrag - INFO - query LLM func: Priority queue workers shutdown complete
+2026-10-09 18:39:15,556 - lightrag - INFO - vlm LLM func: Shutting down priority queue workers
+2026-10-09 18:39:15,556 - lightrag - INFO - vlm LLM func: Priority queue workers shutdown complete
+2026-10-09 18:39:15,557 - lightrag - INFO - Embedding func: Shutting down priority queue workers
+2026-10-09 18:39:15,557 - lightrag - INFO - Embedding func: Priority queue workers shutdown complete
+2026-10-09 18:39:15,558 - lightrag - INFO - Successfully finalized 12 storages
+2026-10-09 18:39:15,559 - uvicorn.error - INFO - Application shutdown complete.
+2026-10-09 18:39:15,561 - uvicorn.error - INFO - Finished server process [51906]

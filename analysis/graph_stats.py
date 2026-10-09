@@ -347,7 +347,7 @@ def main() -> None:
     c, gr, ci, lg, cf, pm, ca = S["corpus"], S["graph"], S["graph"]["citation"], S["log"], S["config"], S["pre_merge"], S["cache"]
     rows = [[d["id"], latex_escape(d["title"]), latex_escape(d["venue"]), latex_escape(d["year"]),
              fmt_int(d["chunks"]), fmt_int(d["tokens"]), fmt_int(d["wall_s"] or 0)] for d in processed]
-    write_table(TABLES / "tab_corpus.tex", wide=True, size=r"\scriptsize",
+    write_table(TABLES / "tab_corpus.tex", wide=True, size=r"\scriptsize", placement="p",  # full float page: keeps Section VI next to Table III
                 caption=f"The {len(processed)} documents of the corpus after ingestion (venue and year as printed on the first page; dashes where the manuscript carries none). Chunks and tokens are those produced by the chunker; time is the per-document wall-clock span recorded in the document status store.",
                 label="tab:corpus", colspec="l p{7.9cm} p{3.1cm} c r r r",
                 header=["ID", "Title", "Venue", "Year", "Chunks", "Tokens", "Time (s)"], rows=rows,
