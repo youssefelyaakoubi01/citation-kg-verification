@@ -20,7 +20,7 @@ import sys
 from collections import Counter, defaultdict
 
 from common import (
-    ANALYSIS, DATA, ENV, HUB, LOG, REPO, SEP, TABLES, VOCAB, DOI_RE,
+    ANALYSIS, DATA, ENV, HUB, LOG, REPO, SEP, STORAGE, TABLES, VOCAB, DOI_RE,
     cited_endpoint, fmt_float, fmt_int, fmt_pct, has_citing_sentence,
     is_placeholder, latex_escape, load_graph, load_kv, node_file_paths,
     read_env, split_keywords, write_macros, write_table,
