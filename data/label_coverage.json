@@ -1,0 +1,36 @@
+{
+  "cited_works": 1755,
+  "top_k": 40,
+  "results": {
+    "full title": {
+      "applicable": 1755,
+      "hit@1": 1673,
+      "hit@5": 1752,
+      "hit@10": 1753,
+      "hit@40": 1755,
+      "query_node_hit1": 1673,
+      "reach_via_edges": 1755,
+      "split_into_terms": 282
+    },
+    "partial title": {
+      "applicable": 1747,
+      "hit@1": 803,
+      "hit@5": 1254,
+      "hit@10": 1359,
+      "hit@40": 1549,
+      "query_node_hit1": 137,
+      "reach_via_edges": 1553,
+      "split_into_terms": 0
+    },
+    "first author": {
+      "applicable": 1077,
+      "hit@1": 0,
+      "hit@5": 103,
+      "hit@10": 108,
+      "hit@40": 121,
+      "query_node_hit1": 1077,
+      "reach_via_edges": 1077,
+      "split_into_terms": 0
+    }
+  }
+}

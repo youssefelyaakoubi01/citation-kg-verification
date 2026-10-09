@@ -1,0 +1,106 @@
+{
+  "n": 50,
+  "documents": 22,
+  "labels_A": {
+    "unrelated": 1,
+    "insufficient_evidence": 18,
+    "partially_supports": 13,
+    "supports": 18
+  },
+  "labels_B": {
+    "unrelated": 1,
+    "insufficient_evidence": 32,
+    "supports": 15,
+    "partially_supports": 2
+  },
+  "agreement": 23,
+  "kappa": 0.1702519975414874,
+  "retrieval": {
+    "entities_mean": 68.32,
+    "relations_mean": 157.06,
+    "chunks_mean": 14.3,
+    "chunks_zero": 0,
+    "cited_in_context": 50,
+    "claim_in_context": 41,
+    "sentence_in_chunks": 7,
+    "context_chars_mean": 122690.84
+  },
+  "evidence": {
+    "A_answers_with_ids": 50,
+    "B_answers_with_ids": 0,
+    "A_ids_total": 187,
+    "A_ids_in_context": 175
+  },
+  "latency": {
+    "retrieval_median": 0.17232280600001104,
+    "A_median": 6.258187177500076,
+    "B_median": 4.288340779999999
+  },
+  "ci95": {
+    "method": "Wilson score interval for proportions; percentile bootstrap (10000 resamples, seed 42) for kappa",
+    "agreement": [
+      0.32969652098821567,
+      0.5960112870260735
+    ],
+    "kappa": [
+      -0.01716465352828994,
+      0.36046688666685556
+    ],
+    "labels_A": {
+      "supports": [
+        0.2413874957171047,
+        0.4985898323329072
+      ],
+      "partially_supports": [
+        0.15871527430089563,
+        0.39553157378483916
+      ],
+      "unrelated": [
+        0.003539259232504602,
+        0.10495443693896496
+      ],
+      "contradicts": [
+        0.0,
+        0.07134760017861413
+      ],
+      "insufficient_evidence": [
+        0.2413874957171047,
+        0.4985898323329072
+      ]
+    },
+    "labels_B": {
+      "supports": [
+        0.1910355343030571,
+        0.4375035057683886
+      ],
+      "partially_supports": [
+        0.011038884228173514,
+        0.13460090793615148
+      ],
+      "unrelated": [
+        0.003539259232504602,
+        0.10495443693896496
+      ],
+      "contradicts": [
+        0.0,
+        0.07134760017861413
+      ],
+      "insufficient_evidence": [
+        0.5014101676670928,
+        0.7586125042828953
+      ]
+    },
+    "claim_in_context": [
+      0.6920394621161083,
+      0.9022980737695785
+    ],
+    "sentence_in_chunks": [
+      0.0695083338917044,
+      0.2618619382368978
+    ],
+    "ids_in_context": [
+      0.8911983244635043,
+      0.9629137796647004
+    ]
+  }
+}

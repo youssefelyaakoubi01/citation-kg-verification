@@ -1,0 +1,800 @@
+2026-10-09 15:33:36,738 INFO [] Loaded graph from /home/youssef/PHD/Lightrag/analysis/rag_storage_pilot/graph_chunk_entity_relation.graphml with 12309 nodes, 20537 edges
+2026-10-09 15:33:36,738 INFO Role LLM Configuration (initialized):
+2026-10-09 15:33:36,739 INFO  - extract: None/None, host=None, max_async=4, timeout=240
+2026-10-09 15:33:36,739 INFO  - keyword: None/None, host=None, max_async=4, timeout=240
+2026-10-09 15:33:36,739 INFO  - query: None/None, host=None, max_async=4, timeout=240
+2026-10-09 15:33:36,739 INFO  - vlm: None/None, host=None, max_async=4, timeout=240
+2026-10-09 15:33:36,757 INFO [] Process 76721 KV load full_docs with 37 records
+2026-10-09 15:33:36,775 INFO [] Process 76721 KV load text_chunks with 467 records
+2026-10-09 15:33:36,779 INFO [] Process 76721 KV load full_entities with 35 records
+2026-10-09 15:33:36,791 INFO [] Process 76721 KV load full_relations with 35 records
+2026-10-09 15:33:36,814 INFO [] Process 76721 KV load entity_chunks with 12309 records
+2026-10-09 15:33:36,861 INFO [] Process 76721 KV load relation_chunks with 20537 records
+2026-10-09 15:33:37,186 INFO [] Process 76721 KV load llm_response_cache with 1318 records
+2026-10-09 15:33:37,193 INFO [] Process 76721 doc status load doc_status with 40 records
+2026-10-09 15:33:37,193 INFO keyword LLM func: 4 new workers initialized (Timeouts: Func: 240s, Worker: 480s, Health Check: 495s)
+2026-10-09 15:33:40,883 INFO  == LLM cache == saving: hybrid:keywords:31618efff1f25dbf671fe60fe796d442
+2026-10-09 15:33:40,896 INFO Label lookup: 40 entities for 'Explainable machine learning models applied to predicting customer churn for e-commerce, Jaccard similarity, Cosine similarity, SBERT, Customer churn prediction, E-commerce' (top_k:40)
+2026-10-09 15:33:40,909 INFO Local query: 40 entities, 229 relations
+2026-10-09 15:33:40,940 INFO Label lookup: 40 entities for 'Citation verification, Claim support, Text similarity methods, Hybrid similarity approach' (top_k:40)
+2026-10-09 15:33:40,957 INFO Local query: 40 entities, 317 relations
+2026-10-09 15:33:40,957 INFO Raw search results: 80 entities, 544 relations, 0 vector chunks
+2026-10-09 15:33:41,026 INFO After truncation: 67 entities, 131 relations
+2026-10-09 15:33:41,026 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:33:41,026 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:33:41,026 INFO Selecting 91 from 91 entity-related chunks by weighted polling
+2026-10-09 15:33:41,027 INFO Find 2 additional chunks in 2 relations (deduplicated 44)
+2026-10-09 15:33:41,027 INFO KG chunk selection: VECTOR unavailable for relation chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:33:41,027 INFO Selecting 2 from 2 relation-related chunks by weighted polling
+2026-10-09 15:33:41,027 INFO Round-robin merged chunks: 93 -> 93 (deduplicated 0)
+2026-10-09 15:33:41,037 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:33:41,082 INFO Final context: 67 entities, 131 relations, 13 chunks
+2026-10-09 15:33:41,082 INFO Final chunks S+F/O: E4/1 R1/1 E1/2 R1/2 E1/3 E12/4 E1/5 E2/6 E1/7 E1/8 E7/9 E5/10 E5/11
+2026-10-09 15:33:56,124 INFO  == LLM cache == saving: hybrid:keywords:879d4f8287ce0a1316c37a5832e4d59f
+2026-10-09 15:33:56,150 INFO Label lookup: 40 entities for 'Study [26], Work [25], Time of day, Vehicle usage patterns, Driving behavior' (top_k:40)
+2026-10-09 15:33:56,158 INFO Local query: 40 entities, 131 relations
+2026-10-09 15:33:56,186 INFO Label lookup: 40 entities for 'Driving behavior evaluation, Citation claim verification, Driver vehicle usage patterns, Driver behavior modeling' (top_k:40)
+2026-10-09 15:33:56,199 INFO Local query: 40 entities, 152 relations
+2026-10-09 15:33:56,200 INFO Raw search results: 77 entities, 275 relations, 0 vector chunks
+2026-10-09 15:33:56,230 INFO After truncation: 77 entities, 177 relations
+2026-10-09 15:33:56,230 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:33:56,231 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:33:56,231 INFO Selecting 72 from 72 entity-related chunks by weighted polling
+2026-10-09 15:33:56,232 INFO Find no additional relations-related chunks from 177 relations
+2026-10-09 15:33:56,232 INFO Round-robin merged chunks: 72 -> 72 (deduplicated 0)
+2026-10-09 15:33:56,240 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:33:56,286 INFO Final context: 77 entities, 177 relations, 17 chunks
+2026-10-09 15:33:56,286 INFO Final chunks S+F/O: E1/1 E3/2 E3/3 E1/4 E1/5 E2/6 E3/7 E3/8 E2/9 E1/10 E3/11 E2/12 E1/13 E1/14 E1/15 E1/16 E1/17
+2026-10-09 15:34:08,415 INFO  == LLM cache == saving: hybrid:keywords:c8ae2a6a76335d2e9e8c22dc2e8c2f26
+2026-10-09 15:34:08,448 INFO Label lookup: 40 entities for 'FB Approach for VANET Collision Warning Systems, FB approach, VANET, collision warning systems, ecological domain, medicine, logistics, multiple parameters' (top_k:40)
+2026-10-09 15:34:08,459 INFO Local query: 40 entities, 175 relations
+2026-10-09 15:34:08,494 INFO Label lookup: 40 entities for 'citation support verification, FB approach applications, VANET collision warning systems, multiple parameters consideration, prior works comparison' (top_k:40)
+2026-10-09 15:34:08,502 INFO Local query: 40 entities, 123 relations
+2026-10-09 15:34:08,502 INFO Raw search results: 71 entities, 267 relations, 0 vector chunks
+2026-10-09 15:34:08,531 INFO After truncation: 71 entities, 170 relations
+2026-10-09 15:34:08,532 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:34:08,532 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:34:08,532 INFO Selecting 81 from 81 entity-related chunks by weighted polling
+2026-10-09 15:34:08,533 INFO Find no additional relations-related chunks from 170 relations
+2026-10-09 15:34:08,533 INFO Round-robin merged chunks: 81 -> 81 (deduplicated 0)
+2026-10-09 15:34:08,543 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:34:08,601 INFO Final context: 71 entities, 170 relations, 15 chunks
+2026-10-09 15:34:08,601 INFO Final chunks S+F/O: E8/1 E2/2 E1/3 E2/4 E2/5 E2/6 E2/7 E2/8 E2/9 E3/10 E1/11 E2/12 E1/13 E1/14 E1/15
+2026-10-09 15:34:25,941 INFO  == LLM cache == saving: hybrid:keywords:ba2cce07ebe00e3652e56f009b5f5759
+2026-10-09 15:34:25,956 INFO Label lookup: 12 entities for 'Genetic Algorithms, Study [11], Reference [11], Reference [12], Reference [13], Road traffic accidents, Forecasting methods' (top_k:40)
+2026-10-09 15:34:25,960 INFO Local query: 12 entities, 84 relations
+2026-10-09 15:34:25,990 INFO Label lookup: 40 entities for 'Citation support verification, Road traffic accident forecasting methods, Genetic algorithms in accident prediction' (top_k:40)
+2026-10-09 15:34:26,001 INFO Local query: 40 entities, 156 relations
+2026-10-09 15:34:26,001 INFO Raw search results: 48 entities, 228 relations, 0 vector chunks
+2026-10-09 15:34:26,026 INFO After truncation: 48 entities, 157 relations
+2026-10-09 15:34:26,027 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:34:26,027 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:34:26,027 INFO Selecting 62 from 62 entity-related chunks by weighted polling
+2026-10-09 15:34:26,027 INFO Find no additional relations-related chunks from 157 relations
+2026-10-09 15:34:26,027 INFO Round-robin merged chunks: 62 -> 62 (deduplicated 0)
+2026-10-09 15:34:26,037 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:34:26,088 INFO Final context: 48 entities, 157 relations, 16 chunks
+2026-10-09 15:34:26,088 INFO Final chunks S+F/O: E6/1 E1/2 E1/3 E1/4 E2/5 E3/6 E3/7 E3/8 E3/9 E3/10 E3/11 E2/12 E2/13 E2/14 E2/15 E1/16
+2026-10-09 15:34:40,498 INFO  == LLM cache == saving: hybrid:keywords:e08e9e3babbbc7e07933f865b1f98e8f
+2026-10-09 15:34:40,527 INFO Label lookup: 40 entities for 'Akowoura & Livian, 2023, Working conditions, Lack of respect, Status, Salary, Public sector, Administrative sector, Table 1' (top_k:40)
+2026-10-09 15:34:40,536 INFO Local query: 40 entities, 136 relations
+2026-10-09 15:34:40,566 INFO Label lookup: 40 entities for 'Citation verification, Workplace conflict causes, Sources of conflict in companies, Claim support assessment' (top_k:40)
+2026-10-09 15:34:40,575 INFO Local query: 40 entities, 143 relations
+2026-10-09 15:34:40,576 INFO Raw search results: 79 entities, 274 relations, 0 vector chunks
+2026-10-09 15:34:40,611 INFO After truncation: 78 entities, 160 relations
+2026-10-09 15:34:40,612 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:34:40,612 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:34:40,612 INFO Selecting 109 from 109 entity-related chunks by weighted polling
+2026-10-09 15:34:40,613 INFO Find 1 additional chunks in 1 relations (deduplicated 92)
+2026-10-09 15:34:40,613 INFO KG chunk selection: VECTOR unavailable for relation chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:34:40,613 INFO Selecting 1 from 1 relation-related chunks by weighted polling
+2026-10-09 15:34:40,613 INFO Round-robin merged chunks: 110 -> 110 (deduplicated 0)
+2026-10-09 15:34:40,622 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:34:40,668 INFO Final context: 78 entities, 160 relations, 14 chunks
+2026-10-09 15:34:40,668 INFO Final chunks S+F/O: E7/1 R1/1 E4/2 E1/3 E1/4 E1/5 E5/6 E1/7 E2/8 E1/9 E1/10 E4/11 E3/12 E1/13
+2026-10-09 15:35:00,088 INFO  == LLM cache == saving: hybrid:keywords:13c85af691c7ec13d9f63799bbb3ee45
+2026-10-09 15:35:00,100 INFO Label lookup: 40 entities for 'Bayesian Networks, Study [14], Reference [15], Road traffic accidents' (top_k:40)
+2026-10-09 15:35:00,122 INFO Local query: 40 entities, 426 relations
+2026-10-09 15:35:00,151 INFO Label lookup: 40 entities for 'Citation support verification, Road traffic accident forecasting methods, Accident prediction approaches' (top_k:40)
+2026-10-09 15:35:00,161 INFO Local query: 40 entities, 164 relations
+2026-10-09 15:35:00,161 INFO Raw search results: 80 entities, 588 relations, 0 vector chunks
+2026-10-09 15:35:00,217 INFO After truncation: 79 entities, 132 relations
+2026-10-09 15:35:00,217 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:35:00,217 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:35:00,217 INFO Selecting 83 from 83 entity-related chunks by weighted polling
+2026-10-09 15:35:00,218 INFO Find no additional relations-related chunks from 132 relations
+2026-10-09 15:35:00,218 INFO Round-robin merged chunks: 83 -> 83 (deduplicated 0)
+2026-10-09 15:35:00,227 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:35:00,273 INFO Final context: 79 entities, 132 relations, 14 chunks
+2026-10-09 15:35:00,273 INFO Final chunks S+F/O: E4/1 E3/2 E2/3 E2/4 E1/5 E1/6 E1/7 E4/8 E3/9 E1/10 E1/11 E1/12 E1/13 E1/14
+2026-10-09 15:35:12,138 INFO  == LLM cache == saving: hybrid:keywords:b2c1196cab55b0b345f42c92fdcadeb3
+2026-10-09 15:35:12,160 INFO Label lookup: 20 entities for 'Wang [46], Figure 9, co-authors, largest number of collaborators, Wang [33], Wang [47], documents' (top_k:40)
+2026-10-09 15:35:12,164 INFO Local query: 20 entities, 55 relations
+2026-10-09 15:35:12,188 INFO Label lookup: 40 entities for 'citation verification, co-authorship collaboration clusters, feature selection techniques, research collaboration analysis' (top_k:40)
+2026-10-09 15:35:12,201 INFO Local query: 40 entities, 228 relations
+2026-10-09 15:35:12,201 INFO Raw search results: 55 entities, 266 relations, 0 vector chunks
+2026-10-09 15:35:12,228 INFO After truncation: 55 entities, 142 relations
+2026-10-09 15:35:12,228 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:35:12,229 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:35:12,229 INFO Selecting 44 from 44 entity-related chunks by weighted polling
+2026-10-09 15:35:12,229 INFO Find no additional relations-related chunks from 142 relations
+2026-10-09 15:35:12,229 INFO Round-robin merged chunks: 44 -> 44 (deduplicated 0)
+2026-10-09 15:35:12,237 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:35:12,291 INFO Final context: 55 entities, 142 relations, 15 chunks
+2026-10-09 15:35:12,291 INFO Final chunks S+F/O: E6/1 E3/2 E2/3 E1/4 E3/5 E1/6 E1/7 E2/8 E3/9 E3/10 E2/11 E1/12 E1/13 E1/14 E2/15
+2026-10-09 15:35:23,813 INFO  == LLM cache == saving: hybrid:keywords:00126ea8a44a411278e7aa811751d617
+2026-10-09 15:35:23,845 INFO Label lookup: 40 entities for 'Study [27], aerospace and defense, textiles, fashion, dairy, AHP, AHP-TOPSIS, fuzzy TOPSIS, FAHP-TOPSIS' (top_k:40)
+2026-10-09 15:35:23,858 INFO Local query: 40 entities, 228 relations
+2026-10-09 15:35:23,890 INFO Label lookup: 40 entities for 'citation verification, supplier evaluation, multi-criteria decision-making methods, sector-specific supplier selection studies' (top_k:40)
+2026-10-09 15:35:23,902 INFO Local query: 40 entities, 207 relations
+2026-10-09 15:35:23,902 INFO Raw search results: 77 entities, 406 relations, 0 vector chunks
+2026-10-09 15:35:23,950 INFO After truncation: 70 entities, 164 relations
+2026-10-09 15:35:23,950 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:35:23,951 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:35:23,951 INFO Selecting 69 from 69 entity-related chunks by weighted polling
+2026-10-09 15:35:23,951 INFO Find 1 additional chunks in 1 relations (deduplicated 60)
+2026-10-09 15:35:23,952 INFO KG chunk selection: VECTOR unavailable for relation chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:35:23,952 INFO Selecting 1 from 1 relation-related chunks by weighted polling
+2026-10-09 15:35:23,952 INFO Round-robin merged chunks: 70 -> 70 (deduplicated 0)
+2026-10-09 15:35:23,961 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:35:24,011 INFO Final context: 70 entities, 164 relations, 13 chunks
+2026-10-09 15:35:24,011 INFO Final chunks S+F/O: E9/1 R1/1 E1/2 E1/3 E2/4 E6/5 E4/6 E4/7 E4/8 E3/9 E3/10 E5/11 E2/12
+2026-10-09 15:35:37,531 INFO  == LLM cache == saving: hybrid:keywords:5080f4deab032aacfda209caad353e2d
+2026-10-09 15:35:37,549 INFO Label lookup: 40 entities for 'Malindzakova et al., Shewhart control charts, Plastic moldings, Quality characteristics, Automotive industry' (top_k:40)
+2026-10-09 15:35:37,558 INFO Local query: 40 entities, 135 relations
+2026-10-09 15:35:37,583 INFO Label lookup: 40 entities for 'Claim verification, Statistical process control, Quality evaluation of plastic moldings, Automotive industry requirements' (top_k:40)
+2026-10-09 15:35:37,594 INFO Local query: 40 entities, 184 relations
+2026-10-09 15:35:37,594 INFO Raw search results: 68 entities, 279 relations, 0 vector chunks
+2026-10-09 15:35:37,622 INFO After truncation: 68 entities, 167 relations
+2026-10-09 15:35:37,622 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:35:37,622 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:35:37,622 INFO Selecting 81 from 81 entity-related chunks by weighted polling
+2026-10-09 15:35:37,623 INFO Find no additional relations-related chunks from 167 relations
+2026-10-09 15:35:37,623 INFO Round-robin merged chunks: 81 -> 81 (deduplicated 0)
+2026-10-09 15:35:37,632 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:35:37,677 INFO Final context: 68 entities, 167 relations, 14 chunks
+2026-10-09 15:35:37,677 INFO Final chunks S+F/O: E6/1 E1/2 E4/3 E4/4 E3/5 E3/6 E2/7 E2/8 E1/9 E2/10 E1/11 E2/12 E1/13 E1/14
+2026-10-09 15:35:53,830 INFO  == LLM cache == saving: hybrid:keywords:711da92f4e88ca84d9a26517d3511690
+2026-10-09 15:35:53,844 INFO Label lookup: 9 entities for 'Cohen et al. [14], Deep neural networks, Wrist fractures, X-rays' (top_k:40)
+2026-10-09 15:35:53,847 INFO Local query: 9 entities, 32 relations
+2026-10-09 15:35:53,865 INFO Label lookup: 40 entities for 'Citation verification, Deep learning in medical imaging, Fracture detection' (top_k:40)
+2026-10-09 15:35:53,879 INFO Local query: 40 entities, 194 relations
+2026-10-09 15:35:53,879 INFO Raw search results: 48 entities, 222 relations, 0 vector chunks
+2026-10-09 15:35:53,903 INFO After truncation: 48 entities, 165 relations
+2026-10-09 15:35:53,903 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:35:53,903 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:35:53,904 INFO Selecting 73 from 73 entity-related chunks by weighted polling
+2026-10-09 15:35:53,904 INFO Find no additional relations-related chunks from 165 relations
+2026-10-09 15:35:53,904 INFO Round-robin merged chunks: 73 -> 73 (deduplicated 0)
+2026-10-09 15:35:53,912 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:35:53,958 INFO Final context: 48 entities, 165 relations, 16 chunks
+2026-10-09 15:35:53,958 INFO Final chunks S+F/O: E2/1 E2/2 E1/3 E2/4 E2/5 E1/6 E3/7 E2/8 E2/9 E1/10 E1/11 E2/12 E1/13 E1/14 E2/15 E1/16
+2026-10-09 15:36:15,470 INFO  == LLM cache == saving: hybrid:keywords:49e79efad30724f7426416b93bdd9e41
+2026-10-09 15:36:15,490 INFO Label lookup: 40 entities for 'Ref [15] Bioinformatics, gene expression analysis, protein structure prediction, intrusion detection systems, natural language processing applications' (top_k:40)
+2026-10-09 15:36:15,500 INFO Local query: 40 entities, 165 relations
+2026-10-09 15:36:15,528 INFO Label lookup: 40 entities for 'citation verification, bioinformatics applications, claim support, technology sector applications' (top_k:40)
+2026-10-09 15:36:15,537 INFO Local query: 40 entities, 153 relations
+2026-10-09 15:36:15,537 INFO Raw search results: 79 entities, 314 relations, 0 vector chunks
+2026-10-09 15:36:15,578 INFO After truncation: 76 entities, 172 relations
+2026-10-09 15:36:15,578 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:36:15,578 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:36:15,578 INFO Selecting 95 from 95 entity-related chunks by weighted polling
+2026-10-09 15:36:15,579 INFO Find 2 additional chunks in 2 relations (deduplicated 82)
+2026-10-09 15:36:15,579 INFO KG chunk selection: VECTOR unavailable for relation chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:36:15,579 INFO Selecting 2 from 2 relation-related chunks by weighted polling
+2026-10-09 15:36:15,579 INFO Round-robin merged chunks: 97 -> 97 (deduplicated 0)
+2026-10-09 15:36:15,590 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:36:15,640 INFO Final context: 76 entities, 172 relations, 13 chunks
+2026-10-09 15:36:15,640 INFO Final chunks S+F/O: E7/1 R2/1 E1/2 R1/2 E2/3 E2/4 E1/5 E1/6 E1/7 E3/8 E5/9 E1/10 E1/11
+2026-10-09 15:36:28,010 INFO  == LLM cache == saving: hybrid:keywords:d695665772a21484d3aa28654d516263
+2026-10-09 15:36:28,027 INFO Label lookup: 33 entities for 'Ref [13], SPC techniques, Control charts, Normal distribution, Process data' (top_k:40)
+2026-10-09 15:36:28,035 INFO Local query: 33 entities, 115 relations
+2026-10-09 15:36:28,055 INFO Label lookup: 40 entities for 'Normal distribution assumption, Statistical process control, Citation verification, Process data distribution' (top_k:40)
+2026-10-09 15:36:28,068 INFO Local query: 40 entities, 231 relations
+2026-10-09 15:36:28,068 INFO Raw search results: 71 entities, 328 relations, 0 vector chunks
+2026-10-09 15:36:28,100 INFO After truncation: 71 entities, 156 relations
+2026-10-09 15:36:28,100 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:36:28,100 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:36:28,100 INFO Selecting 55 from 55 entity-related chunks by weighted polling
+2026-10-09 15:36:28,101 INFO Find no additional relations-related chunks from 156 relations
+2026-10-09 15:36:28,101 INFO Round-robin merged chunks: 55 -> 55 (deduplicated 0)
+2026-10-09 15:36:28,110 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:36:28,157 INFO Final context: 71 entities, 156 relations, 14 chunks
+2026-10-09 15:36:28,157 INFO Final chunks S+F/O: E1/1 E1/2 E1/3 E1/4 E1/5 E10/6 E9/7 E7/8 E6/9 E5/10 E5/11 E2/12 E1/13 E1/14
+2026-10-09 15:36:41,067 INFO  == LLM cache == saving: hybrid:keywords:bf53d5b1e026184db4a0f37cd7a8defa
+2026-10-09 15:36:41,089 INFO Label lookup: 40 entities for 'Ref [3], nodes, packets, next-hop, intermediate nodes, destination, packet transmission' (top_k:40)
+2026-10-09 15:36:41,097 INFO Local query: 40 entities, 105 relations
+2026-10-09 15:36:41,121 INFO Label lookup: 40 entities for 'MANET packet forwarding, citation verification, multi-hop routing, node operating approach' (top_k:40)
+2026-10-09 15:36:41,130 INFO Local query: 40 entities, 128 relations
+2026-10-09 15:36:41,130 INFO Raw search results: 75 entities, 212 relations, 0 vector chunks
+2026-10-09 15:36:41,156 INFO After truncation: 75 entities, 169 relations
+2026-10-09 15:36:41,156 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:36:41,156 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:36:41,156 INFO Selecting 68 from 68 entity-related chunks by weighted polling
+2026-10-09 15:36:41,157 INFO Find no additional relations-related chunks from 169 relations
+2026-10-09 15:36:41,157 INFO Round-robin merged chunks: 68 -> 68 (deduplicated 0)
+2026-10-09 15:36:41,165 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:36:41,221 INFO Final context: 75 entities, 169 relations, 13 chunks
+2026-10-09 15:36:41,221 INFO Final chunks S+F/O: E4/1 E2/2 E1/3 E1/4 E1/5 E2/6 E3/7 E3/8 E3/9 E2/10 E1/11 E1/12 E1/13
+2026-10-09 15:37:03,526 INFO  == LLM cache == saving: hybrid:keywords:c53cdbe603530832de6bf7f1382a3f1e
+2026-10-09 15:37:03,543 INFO Label lookup: 40 entities for 'Xiahou and Harada, Business-to-consumer (B2C) e-commerce, Customer segmentation, k-means, SVM' (top_k:40)
+2026-10-09 15:37:03,554 INFO Local query: 40 entities, 174 relations
+2026-10-09 15:37:03,573 INFO Label lookup: 40 entities for 'Citation verification, Customer churn prediction, Predictive model, E-commerce customer analytics' (top_k:40)
+2026-10-09 15:37:03,584 INFO Local query: 40 entities, 199 relations
+2026-10-09 15:37:03,585 INFO Raw search results: 67 entities, 330 relations, 0 vector chunks
+2026-10-09 15:37:03,615 INFO After truncation: 67 entities, 168 relations
+2026-10-09 15:37:03,615 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:37:03,616 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:37:03,616 INFO Selecting 56 from 56 entity-related chunks by weighted polling
+2026-10-09 15:37:03,617 INFO Find no additional relations-related chunks from 168 relations
+2026-10-09 15:37:03,617 INFO Round-robin merged chunks: 56 -> 56 (deduplicated 0)
+2026-10-09 15:37:03,625 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:37:03,676 INFO Final context: 67 entities, 168 relations, 15 chunks
+2026-10-09 15:37:03,677 INFO Final chunks S+F/O: E8/1 E1/2 E1/3 E2/4 E2/5 E1/6 E1/7 E1/8 E10/9 E4/10 E4/11 E4/12 E3/13 E1/14 E2/15
+2026-10-09 15:37:16,915 INFO  == LLM cache == saving: hybrid:keywords:99378e0b8e2a1062f60982300f9a97d4
+2026-10-09 15:37:16,937 INFO Label lookup: 40 entities for 'Ref [12], Interpretable ML for Hard Drive Failure Prediction, Hard drive failure, Prognostics, Explainable insights, System operators, Prediction accuracy' (top_k:40)
+2026-10-09 15:37:16,946 INFO Local query: 40 entities, 124 relations
+2026-10-09 15:37:16,966 INFO Label lookup: 40 entities for 'Citation verification, Claim support, Interpretable machine learning, Hardware failure prediction, Explainable AI' (top_k:40)
+2026-10-09 15:37:16,976 INFO Local query: 40 entities, 179 relations
+2026-10-09 15:37:16,976 INFO Raw search results: 80 entities, 302 relations, 0 vector chunks
+2026-10-09 15:37:17,013 INFO After truncation: 78 entities, 167 relations
+2026-10-09 15:37:17,013 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:37:17,014 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:37:17,014 INFO Selecting 106 from 106 entity-related chunks by weighted polling
+2026-10-09 15:37:17,015 INFO Find 1 additional chunks in 1 relations (deduplicated 93)
+2026-10-09 15:37:17,015 INFO KG chunk selection: VECTOR unavailable for relation chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:37:17,015 INFO Selecting 1 from 1 relation-related chunks by weighted polling
+2026-10-09 15:37:17,015 INFO Round-robin merged chunks: 107 -> 107 (deduplicated 0)
+2026-10-09 15:37:17,025 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:37:17,080 INFO Final context: 78 entities, 167 relations, 13 chunks
+2026-10-09 15:37:17,080 INFO Final chunks S+F/O: E1/1 R1/1 E1/2 E1/3 E1/4 E1/5 E2/6 E1/7 E4/8 E1/9 E4/10 E2/11 E3/12
+2026-10-09 15:37:31,205 INFO  == LLM cache == saving: hybrid:keywords:f2b2ce8639599ca8a85c9342c3c2a542
+2026-10-09 15:37:31,228 INFO Label lookup: 40 entities for 'Ref [17], Fuzzy Bayesian Warehouse Disruption Risk, Product unavailability, Inventory systems, Delivery delay risks, Supply chains' (top_k:40)
+2026-10-09 15:37:31,237 INFO Local query: 40 entities, 139 relations
+2026-10-09 15:37:31,266 INFO Label lookup: 40 entities for 'Citation verification, Fuzzy Bayesian approaches, Disruption risk prediction, Supply chain risk assessment, Warehouse planning' (top_k:40)
+2026-10-09 15:37:31,276 INFO Local query: 40 entities, 152 relations
+2026-10-09 15:37:31,276 INFO Raw search results: 75 entities, 278 relations, 0 vector chunks
+2026-10-09 15:37:31,305 INFO After truncation: 75 entities, 163 relations
+2026-10-09 15:37:31,305 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:37:31,305 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:37:31,305 INFO Selecting 84 from 84 entity-related chunks by weighted polling
+2026-10-09 15:37:31,306 INFO Find no additional relations-related chunks from 163 relations
+2026-10-09 15:37:31,306 INFO Round-robin merged chunks: 84 -> 84 (deduplicated 0)
+2026-10-09 15:37:31,315 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:37:31,362 INFO Final context: 75 entities, 163 relations, 15 chunks
+2026-10-09 15:37:31,362 INFO Final chunks S+F/O: E2/1 E1/2 E1/3 E1/4 E3/5 E1/6 E4/7 E2/8 E1/9 E5/10 E3/11 E2/12 E2/13 E1/14 E2/15
+2026-10-09 15:37:46,850 INFO  == LLM cache == saving: hybrid:keywords:b44f3495c59d7489b615dbd843128893
+2026-10-09 15:37:46,874 INFO Label lookup: 40 entities for 'Huang et al. [32], polymer melt flow behavior, injection molding, simulation, discrepancies' (top_k:40)
+2026-10-09 15:37:46,889 INFO Local query: 40 entities, 274 relations
+2026-10-09 15:37:46,929 INFO Label lookup: 40 entities for 'citation verification, polymer melt flow prediction, injection molding challenges, simulation versus actual results discrepancies' (top_k:40)
+2026-10-09 15:37:46,942 INFO Local query: 40 entities, 234 relations
+2026-10-09 15:37:46,943 INFO Raw search results: 53 entities, 299 relations, 0 vector chunks
+2026-10-09 15:37:46,972 INFO After truncation: 53 entities, 170 relations
+2026-10-09 15:37:46,973 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:37:46,973 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:37:46,973 INFO Selecting 70 from 70 entity-related chunks by weighted polling
+2026-10-09 15:37:46,974 INFO Find no additional relations-related chunks from 170 relations
+2026-10-09 15:37:46,974 INFO Round-robin merged chunks: 70 -> 70 (deduplicated 0)
+2026-10-09 15:37:46,982 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:37:47,031 INFO Final context: 53 entities, 170 relations, 15 chunks
+2026-10-09 15:37:47,031 INFO Final chunks S+F/O: E2/1 E1/2 E1/3 E1/4 E5/5 E4/6 E3/7 E3/8 E3/9 E1/10 E1/11 E2/12 E2/13 E1/14 E1/15
+2026-10-09 15:37:58,616 INFO  == LLM cache == saving: hybrid:keywords:856f80e5bbeb0bf81693ac6a49158a9c
+2026-10-09 15:37:58,633 INFO Label lookup: 40 entities for 'Ref [20], microarray research trends, optimization algorithms, healthcare applications, feature selection' (top_k:40)
+2026-10-09 15:37:58,646 INFO Local query: 40 entities, 214 relations
+2026-10-09 15:37:58,675 INFO Label lookup: 40 entities for 'citation support verification, feature selection research, comprehensive understanding of evolving field, literature review gap' (top_k:40)
+2026-10-09 15:37:58,692 INFO Local query: 40 entities, 278 relations
+2026-10-09 15:37:58,693 INFO Raw search results: 75 entities, 480 relations, 0 vector chunks
+2026-10-09 15:37:58,734 INFO After truncation: 75 entities, 127 relations
+2026-10-09 15:37:58,735 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:37:58,735 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:37:58,735 INFO Selecting 67 from 67 entity-related chunks by weighted polling
+2026-10-09 15:37:58,736 INFO Find no additional relations-related chunks from 127 relations
+2026-10-09 15:37:58,736 INFO Round-robin merged chunks: 67 -> 67 (deduplicated 0)
+2026-10-09 15:37:58,745 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:37:58,792 INFO Final context: 75 entities, 127 relations, 14 chunks
+2026-10-09 15:37:58,792 INFO Final chunks S+F/O: E1/1 E1/2 E1/3 E1/4 E9/5 E7/6 E1/7 E2/8 E2/9 E1/10 E6/11 E5/12 E4/13 E4/14
+2026-10-09 15:38:10,746 INFO  == LLM cache == saving: hybrid:keywords:dfdae7ec962d38771f0db6efb47915fe
+2026-10-09 15:38:10,798 INFO Label lookup: 40 entities for 'Ahola et al., 2014, Kumareswaran, 2023, Ridzuan et al., 2018, Absenteeism, Work commitment, Staff turnover, Performance and productivity, Unsafe working practices, Workplace accident rates' (top_k:40)
+2026-10-09 15:38:10,805 INFO Local query: 40 entities, 85 relations
+2026-10-09 15:38:10,850 INFO Label lookup: 40 entities for 'Burnout organizational impact, Citation verification, Workplace health and safety, Physical and social health effects' (top_k:40)
+2026-10-09 15:38:10,859 INFO Local query: 40 entities, 140 relations
+2026-10-09 15:38:10,859 INFO Raw search results: 73 entities, 204 relations, 0 vector chunks
+2026-10-09 15:38:10,886 INFO After truncation: 73 entities, 163 relations
+2026-10-09 15:38:10,886 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:38:10,887 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:38:10,887 INFO Selecting 49 from 49 entity-related chunks by weighted polling
+2026-10-09 15:38:10,887 INFO Find no additional relations-related chunks from 163 relations
+2026-10-09 15:38:10,887 INFO Round-robin merged chunks: 49 -> 49 (deduplicated 0)
+2026-10-09 15:38:10,897 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:38:10,943 INFO Final context: 73 entities, 163 relations, 17 chunks
+2026-10-09 15:38:10,943 INFO Final chunks S+F/O: E10/1 E7/2 E5/3 E4/4 E4/5 E3/6 E1/7 E1/8 E1/9 E1/10 E1/11 E1/12 E3/13 E3/14 E1/15 E1/16 E1/17
+2026-10-09 15:38:30,594 INFO  == LLM cache == saving: hybrid:keywords:add5aa734b695091aa01ac6a1c2b25ff
+2026-10-09 15:38:30,621 INFO Label lookup: 40 entities for 'Hiremath et al., Adaptive FIS, fuzzy inference system, data packets dropped, MANETs, novel detection method' (top_k:40)
+2026-10-09 15:38:30,634 INFO Local query: 40 entities, 211 relations
+2026-10-09 15:38:30,663 INFO Label lookup: 40 entities for 'citation verification, cooperative black hole attack, MANET security, attack detection and prevention, network performance degradation' (top_k:40)
+2026-10-09 15:38:30,672 INFO Local query: 40 entities, 107 relations
+2026-10-09 15:38:30,673 INFO Raw search results: 78 entities, 305 relations, 0 vector chunks
+2026-10-09 15:38:30,706 INFO After truncation: 78 entities, 163 relations
+2026-10-09 15:38:30,707 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:38:30,707 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:38:30,707 INFO Selecting 83 from 83 entity-related chunks by weighted polling
+2026-10-09 15:38:30,708 INFO Find no additional relations-related chunks from 163 relations
+2026-10-09 15:38:30,708 INFO Round-robin merged chunks: 83 -> 83 (deduplicated 0)
+2026-10-09 15:38:30,717 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:38:30,766 INFO Final context: 78 entities, 163 relations, 13 chunks
+2026-10-09 15:38:30,766 INFO Final chunks S+F/O: E4/1 E1/2 E1/3 E6/4 E4/5 E3/6 E3/7 E2/8 E2/9 E1/10 E1/11 E1/12 E1/13
+2026-10-09 15:38:46,951 INFO  == LLM cache == saving: hybrid:keywords:c4f38259335204939520085a934e74b7
+2026-10-09 15:38:46,971 INFO Label lookup: 40 entities for 'Nasir et al., Hyperledger Fabric, Performance Analysis of Hyperledger Fabric, Latency, Throughput, Scalability, Reference [33]' (top_k:40)
+2026-10-09 15:38:46,989 INFO Local query: 40 entities, 345 relations
+2026-10-09 15:38:47,013 INFO Label lookup: 40 entities for 'Citation verification, Claim support, Blockchain performance analysis, Performance evaluation' (top_k:40)
+2026-10-09 15:38:47,026 INFO Local query: 40 entities, 220 relations
+2026-10-09 15:38:47,026 INFO Raw search results: 79 entities, 556 relations, 0 vector chunks
+2026-10-09 15:38:47,082 INFO After truncation: 36 entities, 125 relations
+2026-10-09 15:38:47,083 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:38:47,083 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:38:47,083 INFO Selecting 69 from 153 entity-related chunks by weighted polling
+2026-10-09 15:38:47,083 INFO Find 71 additional chunks in 28 relations (deduplicated 58)
+2026-10-09 15:38:47,083 INFO KG chunk selection: VECTOR unavailable for relation chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:38:47,084 INFO Selecting 71 from 71 relation-related chunks by weighted polling
+2026-10-09 15:38:47,084 INFO Round-robin merged chunks: 140 -> 140 (deduplicated 0)
+2026-10-09 15:38:47,093 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:38:47,139 INFO Final context: 36 entities, 125 relations, 13 chunks
+2026-10-09 15:38:47,139 INFO Final chunks S+F/O: E2/1 R3/1 E1/2 R2/2 E1/3 R1/3 E5/4 R4/4 E4/5 R2/5 E4/6 R2/6 E4/7
+2026-10-09 15:39:04,033 INFO  == LLM cache == saving: hybrid:keywords:b3b743d5a3d8492d9cc3534a41a2acee
+2026-10-09 15:39:04,075 INFO Label lookup: 40 entities for 'MANET, Ref [2], Conferences, Classrooms, Home networks, Sports stadium, Ship, Small aircraft' (top_k:40)
+2026-10-09 15:39:04,088 INFO Local query: 40 entities, 186 relations
+2026-10-09 15:39:04,129 INFO Label lookup: 40 entities for 'Citation verification, Instant multimedia networks, Temporary network setup, Immediate device communication, Civilian network applications' (top_k:40)
+2026-10-09 15:39:04,141 INFO Local query: 40 entities, 123 relations
+2026-10-09 15:39:04,141 INFO Raw search results: 79 entities, 306 relations, 0 vector chunks
+2026-10-09 15:39:04,179 INFO After truncation: 79 entities, 171 relations
+2026-10-09 15:39:04,180 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:39:04,180 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:39:04,180 INFO Selecting 102 from 102 entity-related chunks by weighted polling
+2026-10-09 15:39:04,181 INFO Find no additional relations-related chunks from 171 relations
+2026-10-09 15:39:04,181 INFO Round-robin merged chunks: 102 -> 102 (deduplicated 0)
+2026-10-09 15:39:04,191 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:39:04,254 INFO Final context: 79 entities, 171 relations, 13 chunks
+2026-10-09 15:39:04,254 INFO Final chunks S+F/O: E3/1 E2/2 E2/3 E2/4 E1/5 E1/6 E1/7 E3/8 E2/9 E2/10 E1/11 E1/12 E2/13
+2026-10-09 15:39:16,374 INFO  == LLM cache == saving: hybrid:keywords:8fd798b74897e506f7a0418ef993e456
+2026-10-09 15:39:16,381 INFO Label lookup: 5 entities for 'bagging, Bagging Reference [21], reference [21]' (top_k:40)
+2026-10-09 15:39:16,383 INFO Local query: 5 entities, 19 relations
+2026-10-09 15:39:16,407 INFO Label lookup: 40 entities for 'citation verification, training strategy, fundamental principle, ensemble learning' (top_k:40)
+2026-10-09 15:39:16,416 INFO Local query: 40 entities, 138 relations
+2026-10-09 15:39:16,417 INFO Raw search results: 44 entities, 155 relations, 0 vector chunks
+2026-10-09 15:39:16,428 INFO After truncation: 44 entities, 155 relations
+2026-10-09 15:39:16,429 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:39:16,429 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:39:16,429 INFO Selecting 48 from 48 entity-related chunks by weighted polling
+2026-10-09 15:39:16,429 INFO Find no additional relations-related chunks from 155 relations
+2026-10-09 15:39:16,429 INFO Round-robin merged chunks: 48 -> 48 (deduplicated 0)
+2026-10-09 15:39:16,436 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:39:16,492 INFO Final context: 44 entities, 155 relations, 18 chunks
+2026-10-09 15:39:16,492 INFO Final chunks S+F/O: E3/1 E1/2 E1/3 E2/4 E1/5 E1/6 E1/7 E1/8 E1/9 E1/10 E1/11 E2/12 E1/13 E1/14 E2/15 E1/16 E1/17 E1/18
+2026-10-09 15:39:31,088 INFO  == LLM cache == saving: hybrid:keywords:ec9771a4bccdc600a422ed1a3043a854
+2026-10-09 15:39:31,116 INFO Label lookup: 40 entities for 'Ref [18], Fuzzy Bayesian inventory unavailability, Product unavailability, Inventory systems, Disruption risks, Warehouse planning, Delivery delay risks, Supply chains' (top_k:40)
+2026-10-09 15:39:31,126 INFO Local query: 40 entities, 147 relations
+2026-10-09 15:39:31,145 INFO Label lookup: 40 entities for 'Fuzzy Bayesian approaches, Citation support verification, Risk prediction, Supply chain risk management, Inventory management' (top_k:40)
+2026-10-09 15:39:31,157 INFO Local query: 40 entities, 210 relations
+2026-10-09 15:39:31,157 INFO Raw search results: 69 entities, 301 relations, 0 vector chunks
+2026-10-09 15:39:31,189 INFO After truncation: 69 entities, 161 relations
+2026-10-09 15:39:31,189 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:39:31,190 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:39:31,190 INFO Selecting 101 from 101 entity-related chunks by weighted polling
+2026-10-09 15:39:31,191 INFO Find no additional relations-related chunks from 161 relations
+2026-10-09 15:39:31,191 INFO Round-robin merged chunks: 101 -> 101 (deduplicated 0)
+2026-10-09 15:39:31,201 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:39:31,254 INFO Final context: 69 entities, 161 relations, 14 chunks
+2026-10-09 15:39:31,254 INFO Final chunks S+F/O: E3/1 E1/2 E1/3 E3/4 E2/5 E1/6 E2/7 E1/8 E5/9 E3/10 E2/11 E2/12 E1/13 E2/14
+2026-10-09 15:39:47,172 INFO  == LLM cache == saving: hybrid:keywords:08786e85f214b586830b60a13e22578b
+2026-10-09 15:39:47,185 INFO Label lookup: 40 entities for 'Radford et al. (7), Deep Convolutional GAN, DCGAN, Table 1' (top_k:40)
+2026-10-09 15:39:47,195 INFO Local query: 40 entities, 145 relations
+2026-10-09 15:39:47,218 INFO Label lookup: 40 entities for 'Citation verification, Claim support, Generative adversarial networks, High-quality image generation' (top_k:40)
+2026-10-09 15:39:47,232 INFO Local query: 40 entities, 253 relations
+2026-10-09 15:39:47,233 INFO Raw search results: 80 entities, 397 relations, 0 vector chunks
+2026-10-09 15:39:47,277 INFO After truncation: 69 entities, 157 relations
+2026-10-09 15:39:47,277 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:39:47,277 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:39:47,278 INFO Selecting 111 from 111 entity-related chunks by weighted polling
+2026-10-09 15:39:47,278 INFO Find 5 additional chunks in 4 relations (deduplicated 81)
+2026-10-09 15:39:47,278 INFO KG chunk selection: VECTOR unavailable for relation chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:39:47,278 INFO Selecting 5 from 5 relation-related chunks by weighted polling
+2026-10-09 15:39:47,279 INFO Round-robin merged chunks: 116 -> 116 (deduplicated 0)
+2026-10-09 15:39:47,288 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:39:47,330 INFO Final context: 69 entities, 157 relations, 14 chunks
+2026-10-09 15:39:47,331 INFO Final chunks S+F/O: E5/1 R1/1 E1/2 R1/2 E1/3 R2/3 E1/4 R1/4 E4/5 R2/5 E4/6 E3/7 E3/8 E2/9
+2026-10-09 15:40:01,429 INFO  == LLM cache == saving: hybrid:keywords:5d59bc650545e2aca631fd34ebeb597f
+2026-10-09 15:40:01,466 INFO Label lookup: 40 entities for 'Kashish et al. [15], FANET, Unmanned aerial vehicles, UAVs, Delivery of goods, Rescue missions, Terrain monitoring, Public key infrastructure, Blockchain' (top_k:40)
+2026-10-09 15:40:01,477 INFO Local query: 40 entities, 173 relations
+2026-10-09 15:40:01,502 INFO Label lookup: 40 entities for 'Citation verification, Decentralized network authentication, Blockchain-based public key infrastructure, UAV network security' (top_k:40)
+2026-10-09 15:40:01,513 INFO Local query: 40 entities, 199 relations
+2026-10-09 15:40:01,514 INFO Raw search results: 78 entities, 357 relations, 0 vector chunks
+2026-10-09 15:40:01,547 INFO After truncation: 78 entities, 161 relations
+2026-10-09 15:40:01,547 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:40:01,548 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:40:01,548 INFO Selecting 85 from 85 entity-related chunks by weighted polling
+2026-10-09 15:40:01,548 INFO Find no additional relations-related chunks from 161 relations
+2026-10-09 15:40:01,548 INFO Round-robin merged chunks: 85 -> 85 (deduplicated 0)
+2026-10-09 15:40:01,558 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:40:01,606 INFO Final context: 78 entities, 161 relations, 13 chunks
+2026-10-09 15:40:01,606 INFO Final chunks S+F/O: E7/1 E1/2 E1/3 E4/4 E4/5 E2/6 E2/7 E1/8 E1/9 E2/10 E2/11 E1/12 E2/13
+2026-10-09 15:40:16,779 INFO  == LLM cache == saving: hybrid:keywords:8725a6f324f3ae3d9b0e4d476ba1884e
+2026-10-09 15:40:16,810 INFO Label lookup: 40 entities for 'Ref [8], Analytical Hierarchy Process (AHP), Best machine selection, Manufacturing orders, Quality, Time, Cost' (top_k:40)
+2026-10-09 15:40:16,820 INFO Local query: 40 entities, 144 relations
+2026-10-09 15:40:16,844 INFO Label lookup: 40 entities for 'Machine selection, Multi-agent system, Multi-criteria decision making, Manufacturing order allocation, Citation claim verification' (top_k:40)
+2026-10-09 15:40:16,855 INFO Local query: 40 entities, 198 relations
+2026-10-09 15:40:16,855 INFO Raw search results: 72 entities, 325 relations, 0 vector chunks
+2026-10-09 15:40:16,891 INFO After truncation: 72 entities, 169 relations
+2026-10-09 15:40:16,891 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:40:16,892 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:40:16,892 INFO Selecting 96 from 96 entity-related chunks by weighted polling
+2026-10-09 15:40:16,893 INFO Find no additional relations-related chunks from 169 relations
+2026-10-09 15:40:16,893 INFO Round-robin merged chunks: 96 -> 96 (deduplicated 0)
+2026-10-09 15:40:16,907 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:40:16,954 INFO Final context: 72 entities, 169 relations, 14 chunks
+2026-10-09 15:40:16,954 INFO Final chunks S+F/O: E4/1 E2/2 E1/3 E1/4 E1/5 E4/6 E4/7 E3/8 E3/9 E2/10 E1/11 E5/12 E2/13 E3/14
+2026-10-09 15:40:31,997 INFO  == LLM cache == saving: hybrid:keywords:b3bc7e47d5db78246179d0ccc0e26415
+2026-10-09 15:40:32,012 INFO Label lookup: 40 entities for 'Baghla and Gupta, Neural network, SVM, NB, RF, Adam' (top_k:40)
+2026-10-09 15:40:32,021 INFO Local query: 40 entities, 150 relations
+2026-10-09 15:40:32,039 INFO Label lookup: 40 entities for 'Customer churn prediction, E-commerce sector, Machine learning techniques, Deep learning, Claim verification' (top_k:40)
+2026-10-09 15:40:32,052 INFO Local query: 40 entities, 246 relations
+2026-10-09 15:40:32,052 INFO Raw search results: 79 entities, 387 relations, 0 vector chunks
+2026-10-09 15:40:32,094 INFO After truncation: 70 entities, 167 relations
+2026-10-09 15:40:32,095 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:40:32,095 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:40:32,095 INFO Selecting 113 from 113 entity-related chunks by weighted polling
+2026-10-09 15:40:32,096 INFO Find 9 additional chunks in 7 relations (deduplicated 86)
+2026-10-09 15:40:32,096 INFO KG chunk selection: VECTOR unavailable for relation chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:40:32,096 INFO Selecting 9 from 9 relation-related chunks by weighted polling
+2026-10-09 15:40:32,096 INFO Round-robin merged chunks: 122 -> 122 (deduplicated 0)
+2026-10-09 15:40:32,105 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:40:32,147 INFO Final context: 70 entities, 167 relations, 13 chunks
+2026-10-09 15:40:32,147 INFO Final chunks S+F/O: E4/1 R7/1 E8/2 R1/2 E4/3 R1/3 E4/4 R2/4 E3/5 R2/5 E3/6 R1/6 E3/7
+2026-10-09 15:40:49,420 INFO  == LLM cache == saving: hybrid:keywords:1fcc1d45906177d8e949d93072284a66
+2026-10-09 15:40:49,437 INFO Label lookup: 40 entities for 'Dickson 1966, Dickson, 1966, 274 companies, Survey' (top_k:40)
+2026-10-09 15:40:49,446 INFO Local query: 40 entities, 136 relations
+2026-10-09 15:40:49,475 INFO Label lookup: 40 entities for 'Citation verification, Supplier selection and evaluation, Early research, Survey research' (top_k:40)
+2026-10-09 15:40:49,484 INFO Local query: 40 entities, 152 relations
+2026-10-09 15:40:49,484 INFO Raw search results: 70 entities, 245 relations, 0 vector chunks
+2026-10-09 15:40:49,509 INFO After truncation: 70 entities, 166 relations
+2026-10-09 15:40:49,510 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:40:49,510 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:40:49,510 INFO Selecting 66 from 66 entity-related chunks by weighted polling
+2026-10-09 15:40:49,511 INFO Find no additional relations-related chunks from 166 relations
+2026-10-09 15:40:49,511 INFO Round-robin merged chunks: 66 -> 66 (deduplicated 0)
+2026-10-09 15:40:49,519 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:40:49,564 INFO Final context: 70 entities, 166 relations, 14 chunks
+2026-10-09 15:40:49,565 INFO Final chunks S+F/O: E5/1 E1/2 E1/3 E4/4 E2/5 E1/6 E1/7 E1/8 E2/9 E2/10 E4/11 E4/12 E2/13 E1/14
+2026-10-09 15:41:11,426 INFO  == LLM cache == saving: hybrid:keywords:1afad501758e2df3195ef0fb3e5617b3
+2026-10-09 15:41:11,462 INFO Label lookup: 40 entities for "Shor's algorithm, Ref [2], Large-scale quantum attacks, Efficient and mature mechanisms" (top_k:40)
+2026-10-09 15:41:11,470 INFO Local query: 40 entities, 127 relations
+2026-10-09 15:41:11,501 INFO Label lookup: 40 entities for 'Citation verification, Quantum attacks on cryptography, Cryptographic mechanism vulnerability, Quantum computing security threats' (top_k:40)
+2026-10-09 15:41:11,509 INFO Local query: 40 entities, 114 relations
+2026-10-09 15:41:11,509 INFO Raw search results: 69 entities, 214 relations, 0 vector chunks
+2026-10-09 15:41:11,535 INFO After truncation: 69 entities, 153 relations
+2026-10-09 15:41:11,536 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:41:11,536 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:41:11,536 INFO Selecting 71 from 71 entity-related chunks by weighted polling
+2026-10-09 15:41:11,537 INFO Find no additional relations-related chunks from 153 relations
+2026-10-09 15:41:11,537 INFO Round-robin merged chunks: 71 -> 71 (deduplicated 0)
+2026-10-09 15:41:11,545 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:41:11,594 INFO Final context: 69 entities, 153 relations, 14 chunks
+2026-10-09 15:41:11,594 INFO Final chunks S+F/O: E6/1 E5/2 E2/3 E2/4 E2/5 E2/6 E1/7 E1/8 E1/9 E1/10 E1/11 E2/12 E1/13 E1/14
+2026-10-09 15:41:24,438 INFO  == LLM cache == saving: hybrid:keywords:fc4e28e9105deacd7f12b9944311f0d6
+2026-10-09 15:41:24,453 INFO Label lookup: 14 entities for 'Reference [21], Confusion matrix, Confusion matrix cell, Specific outcome, Confusion Matrix Outcomes' (top_k:40)
+2026-10-09 15:41:24,458 INFO Local query: 14 entities, 77 relations
+2026-10-09 15:41:24,481 INFO Label lookup: 40 entities for 'Citation verification, Confusion matrix interpretation, Classification evaluation outcomes' (top_k:40)
+2026-10-09 15:41:24,491 INFO Local query: 40 entities, 187 relations
+2026-10-09 15:41:24,492 INFO Raw search results: 42 entities, 201 relations, 0 vector chunks
+2026-10-09 15:41:24,513 INFO After truncation: 42 entities, 171 relations
+2026-10-09 15:41:24,514 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:41:24,514 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:41:24,514 INFO Selecting 59 from 59 entity-related chunks by weighted polling
+2026-10-09 15:41:24,515 INFO Find no additional relations-related chunks from 171 relations
+2026-10-09 15:41:24,515 INFO Round-robin merged chunks: 59 -> 59 (deduplicated 0)
+2026-10-09 15:41:24,522 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:41:24,568 INFO Final context: 42 entities, 171 relations, 17 chunks
+2026-10-09 15:41:24,569 INFO Final chunks S+F/O: E1/1 E1/2 E1/3 E1/4 E1/5 E1/6 E1/7 E7/8 E3/9 E3/10 E2/11 E2/12 E2/13 E1/14 E2/15 E1/16 E2/17
+2026-10-09 15:41:39,973 INFO  == LLM cache == saving: hybrid:keywords:dad273bf3d365310bdeed575a5f927db
+2026-10-09 15:41:40,001 INFO Label lookup: 40 entities for 'Raza et al., musculoskeletal disorders (MSDs), truck drivers, office workers, decision tree, random forest, naïve Bayes' (top_k:40)
+2026-10-09 15:41:40,014 INFO Local query: 40 entities, 243 relations
+2026-10-09 15:41:40,031 INFO Label lookup: 40 entities for 'citation verification, musculoskeletal disorders prevalence, occupational health, machine learning classification' (top_k:40)
+2026-10-09 15:41:40,044 INFO Local query: 40 entities, 218 relations
+2026-10-09 15:41:40,045 INFO Raw search results: 69 entities, 399 relations, 0 vector chunks
+2026-10-09 15:41:40,089 INFO After truncation: 65 entities, 146 relations
+2026-10-09 15:41:40,089 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:41:40,090 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:41:40,090 INFO Selecting 71 from 71 entity-related chunks by weighted polling
+2026-10-09 15:41:40,090 INFO Find no additional relations-related chunks from 146 relations
+2026-10-09 15:41:40,090 INFO Round-robin merged chunks: 71 -> 71 (deduplicated 0)
+2026-10-09 15:41:40,100 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:41:40,144 INFO Final context: 65 entities, 146 relations, 13 chunks
+2026-10-09 15:41:40,144 INFO Final chunks S+F/O: E13/1 E7/2 E1/3 E1/4 E2/5 E1/6 E5/7 E5/8 E5/9 E4/10 E1/11 E4/12 E2/13
+2026-10-09 15:41:55,470 INFO  == LLM cache == saving: hybrid:keywords:23f26a71b7d814db502761a3cdde6707
+2026-10-09 15:41:55,500 INFO Label lookup: 40 entities for 'FIPS 204, ML-DSA, ML-DSA-44, ML-DSA-65, ML-DSA-87, NIST, security-strength category 2, security-strength category 3, security-strength category 5' (top_k:40)
+2026-10-09 15:41:55,512 INFO Local query: 40 entities, 210 relations
+2026-10-09 15:41:55,544 INFO Label lookup: 40 entities for 'Citation verification, Post-quantum digital signature standard, ML-DSA parameter sets, NIST security-strength categories, Module-Lattice-Based Digital Signature Algorithm' (top_k:40)
+2026-10-09 15:41:55,554 INFO Local query: 40 entities, 152 relations
+2026-10-09 15:41:55,554 INFO Raw search results: 76 entities, 349 relations, 0 vector chunks
+2026-10-09 15:41:55,598 INFO After truncation: 59 entities, 121 relations
+2026-10-09 15:41:55,598 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:41:55,599 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:41:55,599 INFO Selecting 72 from 82 entity-related chunks by weighted polling
+2026-10-09 15:41:55,599 INFO Find 18 additional chunks in 10 relations (deduplicated 65)
+2026-10-09 15:41:55,599 INFO KG chunk selection: VECTOR unavailable for relation chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:41:55,600 INFO Selecting 18 from 18 relation-related chunks by weighted polling
+2026-10-09 15:41:55,600 INFO Round-robin merged chunks: 90 -> 90 (deduplicated 0)
+2026-10-09 15:41:55,609 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:41:55,657 INFO Final context: 59 entities, 121 relations, 14 chunks
+2026-10-09 15:41:55,657 INFO Final chunks S+F/O: E12/1 R1/1 E8/2 R1/2 E8/3 R1/3 E7/4 R1/4 E7/5 R1/5 E1/6 R1/6 E1/7 R1/7
+2026-10-09 15:42:11,220 INFO  == LLM cache == saving: hybrid:keywords:2245484280925576ccdfa2512dd88594
+2026-10-09 15:42:11,245 INFO Label lookup: 40 entities for 'Lin and Yang, AHP, Analytic Hierarchy Process, Most appropriate machine, Selection model' (top_k:40)
+2026-10-09 15:42:11,266 INFO Local query: 40 entities, 400 relations
+2026-10-09 15:42:11,292 INFO Label lookup: 40 entities for 'Citation verification, Statement support, Model development, Machine selection, Multi-criteria decision making' (top_k:40)
+2026-10-09 15:42:11,308 INFO Local query: 40 entities, 261 relations
+2026-10-09 15:42:11,308 INFO Raw search results: 79 entities, 600 relations, 0 vector chunks
+2026-10-09 15:42:11,366 INFO After truncation: 55 entities, 148 relations
+2026-10-09 15:42:11,366 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:42:11,367 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:42:11,367 INFO Selecting 93 from 101 entity-related chunks by weighted polling
+2026-10-09 15:42:11,368 INFO Find 8 additional chunks in 7 relations (deduplicated 75)
+2026-10-09 15:42:11,368 INFO KG chunk selection: VECTOR unavailable for relation chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:42:11,368 INFO Selecting 8 from 8 relation-related chunks by weighted polling
+2026-10-09 15:42:11,368 INFO Round-robin merged chunks: 101 -> 101 (deduplicated 0)
+2026-10-09 15:42:11,378 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:42:11,427 INFO Final context: 55 entities, 148 relations, 14 chunks
+2026-10-09 15:42:11,427 INFO Final chunks S+F/O: E4/1 R1/1 E2/2 R1/2 E2/3 R1/3 E5/4 R1/4 E4/5 R1/5 E3/6 R1/6 E2/7 R2/7
+2026-10-09 15:42:28,196 INFO  == LLM cache == saving: hybrid:keywords:d19554a5059eab93429cb78de3f049d1
+2026-10-09 15:42:28,219 INFO Label lookup: 40 entities for 'Yoon 1987, TOPSIS, Hwang and Yoon 1981, Hwang, Yoon, Best alternative selection' (top_k:40)
+2026-10-09 15:42:28,229 INFO Local query: 40 entities, 168 relations
+2026-10-09 15:42:28,258 INFO Label lookup: 40 entities for 'Citation verification, Multi-criteria decision-making, Ranking and selection of alternatives, TOPSIS method origin' (top_k:40)
+2026-10-09 15:42:28,271 INFO Local query: 40 entities, 224 relations
+2026-10-09 15:42:28,271 INFO Raw search results: 69 entities, 286 relations, 0 vector chunks
+2026-10-09 15:42:28,301 INFO After truncation: 69 entities, 151 relations
+2026-10-09 15:42:28,301 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:42:28,302 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:42:28,302 INFO Selecting 64 from 64 entity-related chunks by weighted polling
+2026-10-09 15:42:28,303 INFO Find no additional relations-related chunks from 151 relations
+2026-10-09 15:42:28,303 INFO Round-robin merged chunks: 64 -> 64 (deduplicated 0)
+2026-10-09 15:42:28,312 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:42:28,360 INFO Final context: 69 entities, 151 relations, 14 chunks
+2026-10-09 15:42:28,360 INFO Final chunks S+F/O: E9/1 E1/2 E1/3 E12/4 E5/5 E5/6 E4/7 E4/8 E2/9 E1/10 E2/11 E1/12 E1/13 E1/14
+2026-10-09 15:42:42,489 INFO  == LLM cache == saving: hybrid:keywords:eeea17f51caeb12f35ee960652d31fab
+2026-10-09 15:42:42,536 INFO Label lookup: 40 entities for 'Hyperledger Fabric, Multi-channel structure, Data sharing, Secure permissioned access, Shared ledger, Verifiable transactions, Immutable data records, Decentralized nature, Participants' (top_k:40)
+2026-10-09 15:42:42,553 INFO Local query: 40 entities, 317 relations
+2026-10-09 15:42:42,585 INFO Label lookup: 40 entities for 'Claim verification, Citation support, Blockchain-based data sharing, Decentralized permissioned ledger, Connected vehicle networks' (top_k:40)
+2026-10-09 15:42:42,597 INFO Local query: 40 entities, 190 relations
+2026-10-09 15:42:42,597 INFO Raw search results: 72 entities, 402 relations, 0 vector chunks
+2026-10-09 15:42:42,643 INFO After truncation: 67 entities, 129 relations
+2026-10-09 15:42:42,643 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:42:42,644 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:42:42,644 INFO Selecting 135 from 154 entity-related chunks by weighted polling
+2026-10-09 15:42:42,645 INFO Find 20 additional chunks in 3 relations (deduplicated 109)
+2026-10-09 15:42:42,645 INFO KG chunk selection: VECTOR unavailable for relation chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:42:42,645 INFO Selecting 9 from 20 relation-related chunks by weighted polling
+2026-10-09 15:42:42,645 INFO Round-robin merged chunks: 144 -> 144 (deduplicated 0)
+2026-10-09 15:42:42,655 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:42:42,703 INFO Final context: 67 entities, 129 relations, 12 chunks
+2026-10-09 15:42:42,703 INFO Final chunks S+F/O: E6/1 R1/1 E3/2 R1/2 E3/3 R1/3 E3/4 R1/4 E2/5 R1/5 E1/6 R1/6
+2026-10-09 15:42:58,970 INFO  == LLM cache == saving: hybrid:keywords:c26f342927e72be8e90d1ddc7576ed2d
+2026-10-09 15:42:58,986 INFO Label lookup: 40 entities for 'Amin et al. [23], NB classifier, Naive Bayes, Customer churn' (top_k:40)
+2026-10-09 15:42:58,999 INFO Local query: 40 entities, 228 relations
+2026-10-09 15:42:59,024 INFO Label lookup: 40 entities for 'Claim verification, Customer churn prediction, Innovative learning approach, Citation support' (top_k:40)
+2026-10-09 15:42:59,034 INFO Local query: 40 entities, 174 relations
+2026-10-09 15:42:59,034 INFO Raw search results: 74 entities, 333 relations, 0 vector chunks
+2026-10-09 15:42:59,066 INFO After truncation: 74 entities, 172 relations
+2026-10-09 15:42:59,066 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:42:59,066 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:42:59,066 INFO Selecting 55 from 55 entity-related chunks by weighted polling
+2026-10-09 15:42:59,067 INFO Find no additional relations-related chunks from 172 relations
+2026-10-09 15:42:59,067 INFO Round-robin merged chunks: 55 -> 55 (deduplicated 0)
+2026-10-09 15:42:59,076 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:42:59,123 INFO Final context: 74 entities, 172 relations, 13 chunks
+2026-10-09 15:42:59,123 INFO Final chunks S+F/O: E5/1 E1/2 E3/3 E2/4 E8/5 E7/6 E6/7 E4/8 E4/9 E5/10 E4/11 E3/12 E3/13
+2026-10-09 15:43:13,625 INFO  == LLM cache == saving: hybrid:keywords:9c3d7c2e282b1ead4e1c6694bd6dd3c4
+2026-10-09 15:43:13,665 INFO Label lookup: 40 entities for 'Boucherit & Mazouz, 2023, Gaudet, 2023, Harassment, Stress, Depression, Psychological or emotional state, Challenging work, High demand, External pressures, Incapable to do work' (top_k:40)
+2026-10-09 15:43:13,672 INFO Local query: 40 entities, 95 relations
+2026-10-09 15:43:13,708 INFO Label lookup: 40 entities for 'Citation verification, Workplace stress, Workplace harassment, Employee depression, Employee mental health' (top_k:40)
+2026-10-09 15:43:13,725 INFO Local query: 40 entities, 303 relations
+2026-10-09 15:43:13,725 INFO Raw search results: 80 entities, 389 relations, 0 vector chunks
+2026-10-09 15:43:13,769 INFO After truncation: 80 entities, 125 relations
+2026-10-09 15:43:13,770 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:43:13,770 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:43:13,770 INFO Selecting 57 from 57 entity-related chunks by weighted polling
+2026-10-09 15:43:13,771 INFO Find no additional relations-related chunks from 125 relations
+2026-10-09 15:43:13,771 INFO Round-robin merged chunks: 57 -> 57 (deduplicated 0)
+2026-10-09 15:43:13,780 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:43:13,827 INFO Final context: 80 entities, 125 relations, 17 chunks
+2026-10-09 15:43:13,827 INFO Final chunks S+F/O: E9/1 E1/2 E1/3 E1/4 E6/5 E10/6 E6/7 E4/8 E1/9 E3/10 E3/11 E5/12 E1/13 E1/14 E4/15 E5/16 E1/17
+2026-10-09 15:43:26,011 INFO  == LLM cache == saving: hybrid:keywords:b8f0894f7e0ec0458975747ac2eff815
+2026-10-09 15:43:26,039 INFO Label lookup: 40 entities for 'Ha et al. (2021), 93% accuracy, CNN, edge detection, 3,800 images, injection molding' (top_k:40)
+2026-10-09 15:43:26,058 INFO Local query: 40 entities, 277 relations
+2026-10-09 15:43:26,091 INFO Label lookup: 40 entities for 'citation verification, claim support, defect detection accuracy, baseline comparison, image-based quality inspection' (top_k:40)
+2026-10-09 15:43:26,100 INFO Local query: 40 entities, 151 relations
+2026-10-09 15:43:26,101 INFO Raw search results: 80 entities, 426 relations, 0 vector chunks
+2026-10-09 15:43:26,148 INFO After truncation: 64 entities, 157 relations
+2026-10-09 15:43:26,148 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:43:26,148 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:43:26,148 INFO Selecting 111 from 111 entity-related chunks by weighted polling
+2026-10-09 15:43:26,149 INFO Find 3 additional chunks in 3 relations (deduplicated 91)
+2026-10-09 15:43:26,149 INFO KG chunk selection: VECTOR unavailable for relation chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:43:26,149 INFO Selecting 3 from 3 relation-related chunks by weighted polling
+2026-10-09 15:43:26,149 INFO Round-robin merged chunks: 114 -> 114 (deduplicated 0)
+2026-10-09 15:43:26,159 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:43:26,221 INFO Final context: 64 entities, 157 relations, 14 chunks
+2026-10-09 15:43:26,221 INFO Final chunks S+F/O: E5/1 R1/1 E1/2 R1/2 E1/3 R2/3 E6/4 E5/5 E4/6 E4/7 E3/8 E1/9 E2/10 E1/11
+2026-10-09 15:43:37,591 INFO  == LLM cache == saving: hybrid:keywords:18a2ddf135d70b8e27cb31af6d4ec2f0
+2026-10-09 15:43:37,612 INFO Label lookup: 40 entities for 'Uyanik and Sahin, Automated code generation tool, TBYS, Turkish Management Sciences Institute, TÜSSİDE, ERP' (top_k:40)
+2026-10-09 15:43:37,621 INFO Local query: 40 entities, 130 relations
+2026-10-09 15:43:37,651 INFO Label lookup: 40 entities for 'Citation verification, Automated code generation, Web application development acceleration, Enterprise Resource Planning system' (top_k:40)
+2026-10-09 15:43:37,660 INFO Local query: 40 entities, 136 relations
+2026-10-09 15:43:37,660 INFO Raw search results: 79 entities, 261 relations, 0 vector chunks
+2026-10-09 15:43:37,691 INFO After truncation: 79 entities, 162 relations
+2026-10-09 15:43:37,692 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:43:37,692 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:43:37,692 INFO Selecting 98 from 98 entity-related chunks by weighted polling
+2026-10-09 15:43:37,693 INFO Find no additional relations-related chunks from 162 relations
+2026-10-09 15:43:37,693 INFO Round-robin merged chunks: 98 -> 98 (deduplicated 0)
+2026-10-09 15:43:37,702 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:43:37,749 INFO Final context: 79 entities, 162 relations, 15 chunks
+2026-10-09 15:43:37,749 INFO Final chunks S+F/O: E3/1 E2/2 E2/3 E2/4 E1/5 E2/6 E1/7 E1/8 E2/9 E3/10 E1/11 E1/12 E1/13 E1/14 E1/15
+2026-10-09 15:43:53,858 INFO  == LLM cache == saving: hybrid:keywords:fda1c703640d045ea81aa03b7024fe61
+2026-10-09 15:43:53,899 INFO Label lookup: 40 entities for 'Zhao et al. [13], portable inertial measurement unit, IMU detection system, musculoskeletal disorders (MSDs), construction workers' (top_k:40)
+2026-10-09 15:43:53,907 INFO Local query: 40 entities, 130 relations
+2026-10-09 15:43:53,945 INFO Label lookup: 40 entities for 'citation verification, claim support, musculoskeletal disorder risk identification, construction worker safety, wearable sensing systems' (top_k:40)
+2026-10-09 15:43:53,956 INFO Local query: 40 entities, 185 relations
+2026-10-09 15:43:53,956 INFO Raw search results: 63 entities, 234 relations, 0 vector chunks
+2026-10-09 15:43:53,981 INFO After truncation: 63 entities, 170 relations
+2026-10-09 15:43:53,981 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:43:53,982 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:43:53,982 INFO Selecting 81 from 81 entity-related chunks by weighted polling
+2026-10-09 15:43:53,982 INFO Find no additional relations-related chunks from 170 relations
+2026-10-09 15:43:53,983 INFO Round-robin merged chunks: 81 -> 81 (deduplicated 0)
+2026-10-09 15:43:53,991 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:43:54,039 INFO Final context: 63 entities, 170 relations, 15 chunks
+2026-10-09 15:43:54,040 INFO Final chunks S+F/O: E8/1 E1/2 E1/3 E1/4 E1/5 E1/6 E1/7 E4/8 E3/9 E4/10 E1/11 E1/12 E3/13 E3/14 E1/15
+2026-10-09 15:44:08,271 INFO  == LLM cache == saving: hybrid:keywords:e2f5ff9aec61ab82d0d62441ef8b28d8
+2026-10-09 15:44:08,289 INFO Label lookup: 40 entities for 'Learning Curves Analysis Reference [30], Reference [30], Figure 8, Comprehensive evaluation of models' (top_k:40)
+2026-10-09 15:44:08,306 INFO Local query: 40 entities, 362 relations
+2026-10-09 15:44:08,322 INFO Label lookup: 40 entities for 'Citation verification, Learning curves analysis, Model evaluation, Learning experiences' (top_k:40)
+2026-10-09 15:44:08,335 INFO Local query: 40 entities, 236 relations
+2026-10-09 15:44:08,335 INFO Raw search results: 79 entities, 595 relations, 0 vector chunks
+2026-10-09 15:44:08,396 INFO After truncation: 64 entities, 126 relations
+2026-10-09 15:44:08,396 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:44:08,396 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:44:08,396 INFO Selecting 103 from 103 entity-related chunks by weighted polling
+2026-10-09 15:44:08,397 INFO Find 20 additional chunks in 18 relations (deduplicated 70)
+2026-10-09 15:44:08,397 INFO KG chunk selection: VECTOR unavailable for relation chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:44:08,397 INFO Selecting 20 from 20 relation-related chunks by weighted polling
+2026-10-09 15:44:08,398 INFO Round-robin merged chunks: 123 -> 123 (deduplicated 0)
+2026-10-09 15:44:08,407 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:44:08,450 INFO Final context: 64 entities, 126 relations, 14 chunks
+2026-10-09 15:44:08,450 INFO Final chunks S+F/O: E3/1 R1/1 E3/2 R1/2 E1/3 R1/3 E2/4 R1/4 E2/5 R1/5 E2/6 R1/6 E1/7 R1/7
+2026-10-09 15:44:25,930 INFO  == LLM cache == saving: hybrid:keywords:056c2a9781860bc849f87d971b984058
+2026-10-09 15:44:25,970 INFO Label lookup: 40 entities for 'Torres-Salazar et al., 2024, Table 1, Descriptive BA, Industry 4.0, Business management, Positive impact on decision-making' (top_k:40)
+2026-10-09 15:44:25,981 INFO Local query: 40 entities, 166 relations
+2026-10-09 15:44:26,013 INFO Label lookup: 40 entities for 'Citation verification, Industry 4.0 influence on business management, Descriptive bibliometric analysis, Decision-making impact' (top_k:40)
+2026-10-09 15:44:26,023 INFO Local query: 40 entities, 146 relations
+2026-10-09 15:44:26,023 INFO Raw search results: 76 entities, 286 relations, 0 vector chunks
+2026-10-09 15:44:26,076 INFO After truncation: 76 entities, 169 relations
+2026-10-09 15:44:26,076 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:44:26,076 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:44:26,076 INFO Selecting 86 from 86 entity-related chunks by weighted polling
+2026-10-09 15:44:26,077 INFO Find no additional relations-related chunks from 169 relations
+2026-10-09 15:44:26,077 INFO Round-robin merged chunks: 86 -> 86 (deduplicated 0)
+2026-10-09 15:44:26,088 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:44:26,149 INFO Final context: 76 entities, 169 relations, 14 chunks
+2026-10-09 15:44:26,149 INFO Final chunks S+F/O: E5/1 E1/2 E1/3 E1/4 E5/5 E4/6 E4/7 E3/8 E2/9 E1/10 E1/11 E1/12 E2/13 E1/14
+2026-10-09 15:44:39,827 INFO  == LLM cache == saving: hybrid:keywords:df5a32b19b688e23bec9f7f9a58a3db4
+2026-10-09 15:44:39,850 INFO Label lookup: 40 entities for 'Pearl 1988, Bayesian Network (BN), Pearl, Probabilistic graphical model, Uncertainty reasoning' (top_k:40)
+2026-10-09 15:44:39,864 INFO Local query: 40 entities, 265 relations
+2026-10-09 15:44:39,881 INFO Label lookup: 40 entities for 'Citation verification, Bayesian Network definition, Probabilistic graphical model, Reasoning under uncertainty' (top_k:40)
+2026-10-09 15:44:39,896 INFO Local query: 40 entities, 284 relations
+2026-10-09 15:44:39,896 INFO Raw search results: 58 entities, 330 relations, 0 vector chunks
+2026-10-09 15:44:39,931 INFO After truncation: 58 entities, 158 relations
+2026-10-09 15:44:39,931 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:44:39,932 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:44:39,932 INFO Selecting 81 from 81 entity-related chunks by weighted polling
+2026-10-09 15:44:39,932 INFO Find no additional relations-related chunks from 158 relations
+2026-10-09 15:44:39,933 INFO Round-robin merged chunks: 81 -> 81 (deduplicated 0)
+2026-10-09 15:44:39,941 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:44:39,989 INFO Final context: 58 entities, 158 relations, 15 chunks
+2026-10-09 15:44:39,989 INFO Final chunks S+F/O: E4/1 E1/2 E1/3 E2/4 E3/5 E3/6 E2/7 E2/8 E1/9 E2/10 E2/11 E2/12 E4/13 E2/14 E2/15
+2026-10-09 15:44:56,774 INFO  == LLM cache == saving: hybrid:keywords:9f44355815bf9498b95ebd40345c4b2e
+2026-10-09 15:44:56,797 INFO Label lookup: 40 entities for 'Application of Recommendation System on E-Learning Platform Using Content-Based Filtering with Jaccard Similarity and Cosine Similarity Algorithms, Jaccard similarity, Cosine similarity, SBERT, SBERT and Cosine similarity hybrid' (top_k:40)
+2026-10-09 15:44:56,806 INFO Local query: 40 entities, 141 relations
+2026-10-09 15:44:56,823 INFO Label lookup: 40 entities for 'Recommendation system, E-learning platform, Content-based filtering, Similarity algorithms, Citation claim verification, Hybrid approach' (top_k:40)
+2026-10-09 15:44:56,841 INFO Local query: 40 entities, 330 relations
+2026-10-09 15:44:56,841 INFO Raw search results: 79 entities, 460 relations, 0 vector chunks
+2026-10-09 15:44:56,884 INFO After truncation: 79 entities, 127 relations
+2026-10-09 15:44:56,884 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:44:56,884 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:44:56,884 INFO Selecting 90 from 90 entity-related chunks by weighted polling
+2026-10-09 15:44:56,885 INFO Find no additional relations-related chunks from 127 relations
+2026-10-09 15:44:56,885 INFO Round-robin merged chunks: 90 -> 90 (deduplicated 0)
+2026-10-09 15:44:56,894 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:44:56,942 INFO Final context: 79 entities, 127 relations, 14 chunks
+2026-10-09 15:44:56,942 INFO Final chunks S+F/O: E7/1 E1/2 E2/3 E1/4 E1/5 E1/6 E2/7 E2/8 E2/9 E2/10 E1/11 E2/12 E1/13 E3/14
+2026-10-09 15:45:12,420 INFO  == LLM cache == saving: hybrid:keywords:aa0222866b0fce51c4162619063da280
+2026-10-09 15:45:12,477 INFO Label lookup: 40 entities for 'Energy- and Labor-Aware Flexible Job Shop Scheduling under Dynamic Electricity Pricing, Gong et al., 2019, Volatile electricity prices, Wages, Tailored algorithms, Resource allocation, Cost minimization, Operational conditions, Workshop planning model' (top_k:40)
+2026-10-09 15:45:12,484 INFO Local query: 40 entities, 85 relations
+2026-10-09 15:45:12,517 INFO Label lookup: 40 entities for 'Flexible job shop scheduling, Many-objective optimization, Energy-aware scheduling, Labor-aware scheduling, Dynamic electricity pricing, Production cost optimization, Citation claim verification' (top_k:40)
+2026-10-09 15:45:12,525 INFO Local query: 40 entities, 113 relations
+2026-10-09 15:45:12,526 INFO Raw search results: 76 entities, 188 relations, 0 vector chunks
+2026-10-09 15:45:12,549 INFO After truncation: 76 entities, 166 relations
+2026-10-09 15:45:12,550 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:45:12,550 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:45:12,550 INFO Selecting 65 from 65 entity-related chunks by weighted polling
+2026-10-09 15:45:12,550 INFO Find no additional relations-related chunks from 166 relations
+2026-10-09 15:45:12,551 INFO Round-robin merged chunks: 65 -> 65 (deduplicated 0)
+2026-10-09 15:45:12,560 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:45:12,609 INFO Final context: 76 entities, 166 relations, 16 chunks
+2026-10-09 15:45:12,609 INFO Final chunks S+F/O: E3/1 E5/2 E1/3 E1/4 E1/5 E1/6 E1/7 E1/8 E2/9 E1/10 E1/11 E2/12 E2/13 E1/14 E2/15 E1/16
+2026-10-09 15:45:29,340 INFO  == LLM cache == saving: hybrid:keywords:924ebf7fe36ef002f9eac0803c0daf2a
+2026-10-09 15:45:29,381 INFO Label lookup: 40 entities for 'Xu et al., 2019, CTGAN, Conditional Tabular GAN, Bayesian networks, Gogoshin et al., 2021, copulas, Kamthe et al., 2021, rare categories, joint distributions over variables' (top_k:40)
+2026-10-09 15:45:29,390 INFO Local query: 40 entities, 134 relations
+2026-10-09 15:45:29,438 INFO Label lookup: 40 entities for 'citation verification, probabilistic approaches for tabular data generation, learning and sampling joint distributions, conditional sampling for rare categories' (top_k:40)
+2026-10-09 15:45:29,448 INFO Local query: 40 entities, 152 relations
+2026-10-09 15:45:29,448 INFO Raw search results: 80 entities, 281 relations, 0 vector chunks
+2026-10-09 15:45:29,489 INFO After truncation: 80 entities, 171 relations
+2026-10-09 15:45:29,489 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:45:29,490 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:45:29,490 INFO Selecting 83 from 83 entity-related chunks by weighted polling
+2026-10-09 15:45:29,491 INFO Find no additional relations-related chunks from 171 relations
+2026-10-09 15:45:29,491 INFO Round-robin merged chunks: 83 -> 83 (deduplicated 0)
+2026-10-09 15:45:29,505 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:45:29,573 INFO Final context: 80 entities, 171 relations, 13 chunks
+2026-10-09 15:45:29,573 INFO Final chunks S+F/O: E2/1 E1/2 E1/3 E1/4 E2/5 E9/6 E2/7 E2/8 E2/9 E1/10 E1/11 E1/12 E1/13
+2026-10-09 15:45:45,667 INFO  == LLM cache == saving: hybrid:keywords:36117e268ebfff244c6cbcf391d32f9c
+2026-10-09 15:45:45,689 INFO Label lookup: 40 entities for 'FB Approach Applied in Logistics, FB approach, Logistics, Ecological domain, Medicine, Collision warning systems, VANET' (top_k:40)
+2026-10-09 15:45:45,699 INFO Local query: 40 entities, 170 relations
+2026-10-09 15:45:45,722 INFO Label lookup: 40 entities for 'Citation support verification, FB approach applications, Research domains' (top_k:40)
+2026-10-09 15:45:45,732 INFO Local query: 40 entities, 161 relations
+2026-10-09 15:45:45,732 INFO Raw search results: 79 entities, 324 relations, 0 vector chunks
+2026-10-09 15:45:45,764 INFO After truncation: 79 entities, 168 relations
+2026-10-09 15:45:45,764 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:45:45,764 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:45:45,764 INFO Selecting 90 from 90 entity-related chunks by weighted polling
+2026-10-09 15:45:45,765 INFO Find no additional relations-related chunks from 168 relations
+2026-10-09 15:45:45,765 INFO Round-robin merged chunks: 90 -> 90 (deduplicated 0)
+2026-10-09 15:45:45,774 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:45:45,819 INFO Final context: 79 entities, 168 relations, 14 chunks
+2026-10-09 15:45:45,820 INFO Final chunks S+F/O: E7/1 E1/2 E1/3 E3/4 E1/5 E1/6 E1/7 E3/8 E2/9 E4/10 E1/11 E1/12 E1/13 E2/14
+2026-10-09 15:45:58,926 INFO  == LLM cache == saving: hybrid:keywords:d8d8274281e87afec009f8416c1c67b1
+2026-10-09 15:45:58,947 INFO Label lookup: 40 entities for 'Zhao, confusion matrix, reference [20], trained model, quality defects' (top_k:40)
+2026-10-09 15:45:58,957 INFO Local query: 40 entities, 149 relations
+2026-10-09 15:45:58,976 INFO Label lookup: 40 entities for 'citation verification, model performance evaluation, quality defect identification' (top_k:40)
+2026-10-09 15:45:58,984 INFO Local query: 40 entities, 117 relations
+2026-10-09 15:45:58,984 INFO Raw search results: 79 entities, 264 relations, 0 vector chunks
+2026-10-09 15:45:59,014 INFO After truncation: 79 entities, 164 relations
+2026-10-09 15:45:59,014 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:45:59,014 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:45:59,014 INFO Selecting 88 from 88 entity-related chunks by weighted polling
+2026-10-09 15:45:59,015 INFO Find no additional relations-related chunks from 164 relations
+2026-10-09 15:45:59,015 INFO Round-robin merged chunks: 88 -> 88 (deduplicated 0)
+2026-10-09 15:45:59,024 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:45:59,072 INFO Final context: 79 entities, 164 relations, 14 chunks
+2026-10-09 15:45:59,072 INFO Final chunks S+F/O: E1/1 E1/2 E1/3 E6/4 E3/5 E2/6 E2/7 E2/8 E1/9 E2/10 E2/11 E1/12 E1/13 E1/14
+2026-10-09 15:46:14,772 INFO  == LLM cache == saving: hybrid:keywords:335b93475ffa3389a45b53a25d6a6ad2
+2026-10-09 15:46:14,800 INFO Label lookup: 40 entities for 'MANET Origins and Communication Technologies, MANET, DARPA Packet Radio Network, 1972, theoretical bit rate, frequency, range, power consumption, table 3' (top_k:40)
+2026-10-09 15:46:14,809 INFO Local query: 40 entities, 132 relations
+2026-10-09 15:46:14,840 INFO Label lookup: 40 entities for 'Citation verification, MANET history, Wireless communication technologies, Technology characteristics comparison' (top_k:40)
+2026-10-09 15:46:14,850 INFO Local query: 40 entities, 156 relations
+2026-10-09 15:46:14,850 INFO Raw search results: 70 entities, 222 relations, 0 vector chunks
+2026-10-09 15:46:14,875 INFO After truncation: 70 entities, 184 relations
+2026-10-09 15:46:14,876 INFO KG chunk selection: chunks_vdb does not persist vectors; using WEIGHT selection
+2026-10-09 15:46:14,876 INFO KG chunk selection: VECTOR unavailable for entity chunks (no chunks_vdb or query), using WEIGHT method
+2026-10-09 15:46:14,876 INFO Selecting 76 from 76 entity-related chunks by weighted polling
+2026-10-09 15:46:14,877 INFO Find no additional relations-related chunks from 184 relations
+2026-10-09 15:46:14,877 INFO Round-robin merged chunks: 76 -> 76 (deduplicated 0)
+2026-10-09 15:46:14,886 WARNING Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2026-10-09 15:46:14,936 INFO Final context: 70 entities, 184 relations, 14 chunks
+2026-10-09 15:46:14,936 INFO Final chunks S+F/O: E4/1 E1/2 E1/3 E3/4 E2/5 E1/6 E1/7 E1/8 E2/9 E2/10 E2/11 E2/12 E1/13 E1/14
+2026-10-09 15:46:25,403 INFO extract LLM func: Shutting down priority queue workers
+2026-10-09 15:46:25,403 INFO extract LLM func: Priority queue workers shutdown complete
+2026-10-09 15:46:25,403 INFO keyword LLM func: Shutting down priority queue workers
+2026-10-09 15:46:25,403 INFO keyword LLM func: Priority queue workers shutdown complete
+2026-10-09 15:46:25,403 INFO query LLM func: Shutting down priority queue workers
+2026-10-09 15:46:25,403 INFO query LLM func: Priority queue workers shutdown complete
+2026-10-09 15:46:25,403 INFO vlm LLM func: Shutting down priority queue workers
+2026-10-09 15:46:25,403 INFO vlm LLM func: Priority queue workers shutdown complete
+2026-10-09 15:46:25,404 INFO Successfully finalized 12 storages

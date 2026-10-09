@@ -1,0 +1,122 @@
+### Entity extraction profile for scientific articles and citation analysis.
+###
+### Purpose: build a knowledge graph that supports verifying whether a cited
+### reference is relevant to the claim it is cited for (citing paper -> cited
+### paper -> supported claim), plus the usual bibliographic context (authors,
+### venues, identifiers, methods, datasets, concepts).
+###
+### Activate with ENTITY_TYPE_PROMPT_FILE=scientific_citation.yml (server) or
+### addon_params={"entity_type_prompt_file": "scientific_citation.yml"} (core).
+### Both the text-mode and the JSON-mode example sections are provided, so the
+### profile works whatever ENTITY_EXTRACTION_USE_JSON is set to.
+###
+### The core keeps every entity type the model emits (lower-cased, spaces
+### removed) and treats relationship keywords as free text. To enforce the
+### vocabulary below, pair this profile with the validator in
+### examples/scientific_citation_kg.py (kg_extraction_validator).
+
+entity_types_guidance: |
+  The input text comes from scientific articles (abstracts, body sections, reference lists). Classify each entity using one of the following types. If no type fits, use `Other`.
+
+  - Paper: A scientific article, preprint, thesis, book or report, whether it is the article being read or a work it cites. Use the paper title as the entity name; if only an in-text citation such as `[12]` or `(Smith et al., 2020)` is visible, use the best available label (first author surname, year and short title). The description states what the paper is about, its year, its venue and its main contribution when the text gives them.
+  - Author: A person who authored a paper. Use the form "Firstname Lastname" when both are known, otherwise the form found in the text (e.g. "J. Smith").
+  - Organization: A university, laboratory, company, funding agency or publisher that authors are affiliated with or that produces a work.
+  - Venue: A journal, conference, workshop or preprint server where a paper is published (e.g. "Nature", "ACL 2021", "arXiv").
+  - Identifier: A persistent identifier of a paper: DOI, arXiv ID, PubMed ID, ISBN. Use the bare identifier as the name, in lowercase and without URL prefixes (e.g. "10.1145/3038912.3052662", not "https://doi.org/10.1145/...").
+  - Methodology: A method, algorithm, model, architecture, protocol, metric or experimental procedure that a paper proposes, uses or evaluates (e.g. "BERT", "Random Forest", "Ablation Study", "BLEU").
+  - Dataset: A dataset, corpus, benchmark or collection of samples used or released by a paper (e.g. "ImageNet", "SQuAD 2.0").
+  - Concept: A research topic, theory, phenomenon, problem or technical notion discussed in the text (e.g. "Citation Recommendation", "Catastrophic Forgetting").
+  - Claim: A specific statement, finding or assertion made in the text that is attributed to or supported by a citation (e.g. "Transformer models outperform RNNs on long-range dependencies"). Use a short declarative sentence as the name and quote the supporting sentence in the description.
+
+  Extraction rules for this domain:
+  - Every bibliography entry (e.g. "[12] J. Smith, A. Lee. Title. Journal, 2020. doi:...") yields one Paper entity plus its Author, Venue and Identifier entities, linked to the Paper with the relationships listed below.
+  - An in-text citation marker (`[12]`, `(Smith et al., 2020)`, superscript numbers) refers to a cited Paper. Resolve it to the same entity name used for the bibliography entry whenever both are visible; otherwise keep the label consistent within the text.
+  - When a sentence makes a statement and cites one or more papers for it, create a Claim entity for that statement, link the citing Paper to each cited Paper with `cites`, and link each cited Paper to the Claim with `supports`. Put the full citing sentence in the `cites` relationship description: it is the citation context used to judge relevance.
+  - The article being read is itself a Paper entity (use its title when the text provides it; otherwise "This Paper").
+
+  Relationship keywords (controlled vocabulary): the `relationship_keywords` field MUST start with exactly one of the keywords below, optionally followed by a comma and free-form secondary keywords. Direction is source -> target as described.
+  - cites: citing Paper -> cited Paper. Description = the sentence in which the citation appears.
+  - supports: cited Paper -> Claim it is cited to support.
+  - contradicts: Paper -> Claim or Paper it argues against.
+  - authored_by: Paper -> Author.
+  - affiliated_with: Author -> Organization.
+  - published_in: Paper -> Venue.
+  - has_identifier: Paper -> Identifier.
+  - proposes: Paper -> Methodology, Dataset or Concept it introduces.
+  - uses_method: Paper -> Methodology it applies.
+  - uses_dataset: Paper -> Dataset it evaluates on or trains with.
+  - extends: Paper -> Paper or Methodology it builds upon or improves.
+  - compares_with: Paper or Methodology -> Paper or Methodology it is benchmarked against.
+  - addresses: Paper, Methodology or Claim -> Concept it is about.
+  - related_to: any other meaningful link; use sparingly.
+
+entity_extraction_examples:
+  - |
+    Example input (excerpt of a scientific article):
+
+    Attention-based encoders have become the dominant architecture for long-range dependency modeling [3]. We build on the Transformer [3] and evaluate on SQuAD 2.0 [7].
+
+    References
+    [3] A. Vaswani, N. Shazeer. Attention Is All You Need. NeurIPS, 2017. doi:10.5555/3295222.3295349
+    [7] P. Rajpurkar, R. Jia. Know What You Don't Know: Unanswerable Questions for SQuAD. ACL, 2018.
+
+    Example output:
+
+    entity{tuple_delimiter}This Paper{tuple_delimiter}Paper{tuple_delimiter}The article being read; it builds on the Transformer and evaluates on SQuAD 2.0.
+    entity{tuple_delimiter}Attention Is All You Need{tuple_delimiter}Paper{tuple_delimiter}Cited as [3]. Vaswani and Shazeer, NeurIPS 2017; introduces the Transformer architecture.
+    entity{tuple_delimiter}Know What You Don't Know: Unanswerable Questions for SQuAD{tuple_delimiter}Paper{tuple_delimiter}Cited as [7]. Rajpurkar and Jia, ACL 2018; releases the SQuAD 2.0 dataset.
+    entity{tuple_delimiter}Attention-based encoders dominate long-range dependency modeling{tuple_delimiter}Claim{tuple_delimiter}Statement made in the text: "Attention-based encoders have become the dominant architecture for long-range dependency modeling [3]."
+    entity{tuple_delimiter}Ashish Vaswani{tuple_delimiter}Author{tuple_delimiter}First author of "Attention Is All You Need".
+    entity{tuple_delimiter}NeurIPS{tuple_delimiter}Venue{tuple_delimiter}Conference where "Attention Is All You Need" was published in 2017.
+    entity{tuple_delimiter}10.5555/3295222.3295349{tuple_delimiter}Identifier{tuple_delimiter}DOI of "Attention Is All You Need".
+    entity{tuple_delimiter}Transformer{tuple_delimiter}Methodology{tuple_delimiter}Attention-based encoder architecture introduced by "Attention Is All You Need".
+    entity{tuple_delimiter}SQuAD 2.0{tuple_delimiter}Dataset{tuple_delimiter}Question answering benchmark with unanswerable questions, released by Rajpurkar and Jia.
+    relation{tuple_delimiter}This Paper{tuple_delimiter}Attention Is All You Need{tuple_delimiter}cites, architecture background{tuple_delimiter}"Attention-based encoders have become the dominant architecture for long-range dependency modeling [3]. We build on the Transformer [3]"
+    relation{tuple_delimiter}Attention Is All You Need{tuple_delimiter}Attention-based encoders dominate long-range dependency modeling{tuple_delimiter}supports{tuple_delimiter}Cited as evidence that attention-based encoders dominate long-range dependency modeling.
+    relation{tuple_delimiter}This Paper{tuple_delimiter}Know What You Don't Know: Unanswerable Questions for SQuAD{tuple_delimiter}cites, evaluation data{tuple_delimiter}"We build on the Transformer [3] and evaluate on SQuAD 2.0 [7]."
+    relation{tuple_delimiter}This Paper{tuple_delimiter}Transformer{tuple_delimiter}extends{tuple_delimiter}The paper builds on the Transformer architecture.
+    relation{tuple_delimiter}This Paper{tuple_delimiter}SQuAD 2.0{tuple_delimiter}uses_dataset{tuple_delimiter}The paper evaluates on SQuAD 2.0.
+    relation{tuple_delimiter}Attention Is All You Need{tuple_delimiter}Ashish Vaswani{tuple_delimiter}authored_by{tuple_delimiter}Vaswani is the first author of the paper.
+    relation{tuple_delimiter}Attention Is All You Need{tuple_delimiter}NeurIPS{tuple_delimiter}published_in{tuple_delimiter}Published at NeurIPS in 2017.
+    relation{tuple_delimiter}Attention Is All You Need{tuple_delimiter}10.5555/3295222.3295349{tuple_delimiter}has_identifier{tuple_delimiter}DOI listed in the bibliography entry.
+    relation{tuple_delimiter}Attention Is All You Need{tuple_delimiter}Transformer{tuple_delimiter}proposes{tuple_delimiter}The paper introduces the Transformer architecture.
+    relation{tuple_delimiter}Know What You Don't Know: Unanswerable Questions for SQuAD{tuple_delimiter}SQuAD 2.0{tuple_delimiter}proposes{tuple_delimiter}The paper releases the SQuAD 2.0 dataset.
+    {completion_delimiter}
+
+entity_extraction_json_examples:
+  - |
+    Example input (excerpt of a scientific article):
+
+    Attention-based encoders have become the dominant architecture for long-range dependency modeling [3]. We build on the Transformer [3] and evaluate on SQuAD 2.0 [7].
+
+    References
+    [3] A. Vaswani, N. Shazeer. Attention Is All You Need. NeurIPS, 2017. doi:10.5555/3295222.3295349
+    [7] P. Rajpurkar, R. Jia. Know What You Don't Know: Unanswerable Questions for SQuAD. ACL, 2018.
+
+    Example output:
+
+    {
+      "entities": [
+        {"name": "This Paper", "type": "Paper", "description": "The article being read; it builds on the Transformer and evaluates on SQuAD 2.0."},
+        {"name": "Attention Is All You Need", "type": "Paper", "description": "Cited as [3]. Vaswani and Shazeer, NeurIPS 2017; introduces the Transformer architecture."},
+        {"name": "Know What You Don't Know: Unanswerable Questions for SQuAD", "type": "Paper", "description": "Cited as [7]. Rajpurkar and Jia, ACL 2018; releases the SQuAD 2.0 dataset."},
+        {"name": "Attention-based encoders dominate long-range dependency modeling", "type": "Claim", "description": "Statement made in the text: \"Attention-based encoders have become the dominant architecture for long-range dependency modeling [3].\""},
+        {"name": "Ashish Vaswani", "type": "Author", "description": "First author of \"Attention Is All You Need\"."},
+        {"name": "NeurIPS", "type": "Venue", "description": "Conference where \"Attention Is All You Need\" was published in 2017."},
+        {"name": "10.5555/3295222.3295349", "type": "Identifier", "description": "DOI of \"Attention Is All You Need\"."},
+        {"name": "Transformer", "type": "Methodology", "description": "Attention-based encoder architecture introduced by \"Attention Is All You Need\"."},
+        {"name": "SQuAD 2.0", "type": "Dataset", "description": "Question answering benchmark with unanswerable questions, released by Rajpurkar and Jia."}
+      ],
+      "relationships": [
+        {"source": "This Paper", "target": "Attention Is All You Need", "keywords": "cites, architecture background", "description": "\"Attention-based encoders have become the dominant architecture for long-range dependency modeling [3]. We build on the Transformer [3]\""},
+        {"source": "Attention Is All You Need", "target": "Attention-based encoders dominate long-range dependency modeling", "keywords": "supports", "description": "Cited as evidence that attention-based encoders dominate long-range dependency modeling."},
+        {"source": "This Paper", "target": "Know What You Don't Know: Unanswerable Questions for SQuAD", "keywords": "cites, evaluation data", "description": "\"We build on the Transformer [3] and evaluate on SQuAD 2.0 [7].\""},
+        {"source": "This Paper", "target": "Transformer", "keywords": "extends", "description": "The paper builds on the Transformer architecture."},
+        {"source": "This Paper", "target": "SQuAD 2.0", "keywords": "uses_dataset", "description": "The paper evaluates on SQuAD 2.0."},
+        {"source": "Attention Is All You Need", "target": "Ashish Vaswani", "keywords": "authored_by", "description": "Vaswani is the first author of the paper."},
+        {"source": "Attention Is All You Need", "target": "NeurIPS", "keywords": "published_in", "description": "Published at NeurIPS in 2017."},
+        {"source": "Attention Is All You Need", "target": "10.5555/3295222.3295349", "keywords": "has_identifier", "description": "DOI listed in the bibliography entry."},
+        {"source": "Attention Is All You Need", "target": "Transformer", "keywords": "proposes", "description": "The paper introduces the Transformer architecture."},
+        {"source": "Know What You Don't Know: Unanswerable Questions for SQuAD", "target": "SQuAD 2.0", "keywords": "proposes", "description": "The paper releases the SQuAD 2.0 dataset."}
+      ]
+    }

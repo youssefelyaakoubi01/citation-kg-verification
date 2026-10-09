@@ -1,0 +1,402 @@
+{
+ "5932e71e3772f3376fde9095f3cbef53e1fbe6b8918f6d16f350106cf59e1888": {
+  "text": "{\"label\": \"unrelated\", \"rationale\": \"The cited work (Boukrouh & Azmani) compares seven ML classifiers, including SVM, for e-commerce churn prediction and uses SHAP/LIME for explanation. It does not discuss Jaccard similarity, Cosine similarity, SBERT or any hybrid similarity approach, which is what the citing sentence describes.\", \"evidence_ids\": [\"1\", \"5\", \"Explainable Machine Learning Models Applied to Predicting Customer Churn for E-Commerce\", \"Explainable machine learning models applied to predicting customer churn for e-commerce\"]}",
+  "latency_s": 5.284058719000313
+ },
+ "8cdf75cb0bd74bbbda83e854c991666e1a97460fb8301fb4eb98d94b20703353": {
+  "text": "{\"label\": \"unrelated\", \"rationale\": \"As far as I know, this work is about explainable machine learning (e.g., interpretable classifiers and feature attribution) for predicting e-commerce customer churn, not Jaccard, Cosine or SBERT-based similarity methods. My knowledge of the paper's details is limited, but its scope does not address the similarity-metric methods named in the sentence.\", \"evidence_ids\": []}",
+  "latency_s": 5.899220881000474
+ },
+ "230ce8773fb7883038baa7c20471369b15b296ea239a1a96ff187d4c1435680b": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The only description of Study [26] repeats the citing sentence from the vehicle-accident paper, and no bibliographic entry or content for [26] itself is available. The other 'Study [26]' entity is a dairy supplier-evaluation work from a different paper (chunk 6) and cannot be used to judge this citation.\", \"evidence_ids\": [\"Study [26] Driving Behavior Evaluation\", \"2\", \"Study [26]\", \"6\"]}",
+  "latency_s": 4.7341255349992934
+ },
+ "3e2aef26c3a7ebdbefcbdddd513f362b4d5c7cc725ed7390e6bc6f4af26e1b06": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work is identified only by the generic label \\\"Study [26] Driving Behavior Evaluation,\\\" with no authors, title, or venue, so I cannot identify the actual paper or verify its content. No evidence was provided to confirm that it evaluates driving behavior or models time-of-day vehicle usage patterns.\", \"evidence_ids\": []}",
+  "latency_s": 3.7807097790000626
+ },
+ "e5183ffaa362300f8da31b22d0282d277000428516d848c965b2e15c2d335a73": {
+  "text": "{\"label\": \"partially_supports\", \"rationale\": \"Reference [40] (Golestan, Karray, Kamel 2013) is titled 'High level information fusion through a fuzzy extension to multi-entity Bayesian networks in vehicular ad-hoc networks,' which confirms a fuzzy-Bayesian approach was applied in VANETs. The evidence does not confirm the collision-warning application or the claim that it considered only a few parameters.\", \"evidence_ids\": [\"1\", \"FB Approach for VANET Collision Warning Systems\", \"The FB approach has been used in many studies and domains\", \"Prior FB studies consider only a few parameters simultaneously\"]}",
+  "latency_s": 7.529545605999374
+ },
+ "d02563f1742badd36e8b7ca52fa9accdc5feb66db00983b7228a3731e2caf99f": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The title suggests the cited work applies a fuzzy-Bayesian (FB) approach to VANET collision warning, but I don't know this specific work well enough to confirm it. I also can't verify the claim that prior works considered only a few parameters.\", \"evidence_ids\": []}",
+  "latency_s": 5.707078801000534
+ },
+ "0a7a5ea79002ac0d2a5f15001d591d343ef2ee162f5ac9a37a68c2c121bc8d1d": {
+  "text": "{\"label\": \"partially_supports\", \"rationale\": \"Reference [11] is Clarke et al. (1998), which uses a genetic algorithm on road-junction accidents to extract descriptive rules from police case files. That confirms genetic algorithms were applied to road accident analysis, but the title describes descriptive rule extraction rather than forecasting.\", \"evidence_ids\": [\"1\", \"Genetic Algorithm\", \"Study [11] Genetic Algorithms\", \"Study [9] Road Traffic Accidents Review\"]}",
+  "latency_s": 6.893506782000259
+ },
+ "482c8918b8d7f19fc39adfe140f27c4a763be0b0a9e83191cc8e71bdda11c803": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work is identified only as 'Study [11] Genetic Algorithms' with no title, authors, or venue, so I cannot tell which paper it is or whether it applies genetic algorithms to road traffic accident forecasting. No evidence was provided to settle this.\", \"evidence_ids\": []}",
+  "latency_s": 3.719523200000367
+ },
+ "596195dd85e3863e83880eaa416074a469dfdb508ee234a7ddc18778d0269255": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"All the available evidence comes from the citing article itself: its Table 1 and Table 2 attribute the conflict-related statements to Akowoura & Livian (2023). No passage or entity describes the content of the cited work, so it cannot be verified that the cited work substantiates the claims.\", \"evidence_ids\": [\"Akowoura & Livian, 2023\", \"Workplace conflicts arise over working conditions and respect\", \"Status and salary are most present in the public and administrative sector\", \"Different aspects in companies can be sources of conflicts\", \"1\"]}",
+  "latency_s": 11.884505674000138
+ },
+ "182dfc23102939802274b5af87cfced56f6794723819ed4b00ed88c9c1369531": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"I do not know Akowoura & Livian (2023) well enough to confirm whether it identifies working conditions, respect, status, and salary as frequent sources of workplace conflict, or that status and salary dominate in the public and administrative sector. No evidence was provided to verify the claim.\", \"evidence_ids\": []}",
+  "latency_s": 3.7149832570003127
+ },
+ "02529dbca90e0e45a554f7944bfb4faedf7446d38e0f07bb2aecdd5a2a6a56d6": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The only evidence about [14] is the citing sentence itself (chunk 3, and the entity description that restates it); no bibliographic details or content from the cited work are available. It therefore cannot be checked whether [14] actually applies Bayesian Networks to road traffic accident forecasting.\", \"evidence_ids\": [\"Study [14] Bayesian Networks\", \"3\"]}",
+  "latency_s": 4.745121900999948
+ },
+ "19a16d0a0e9bc9b1522f734df78b0d98f67d11cda8fe5f3920c87f5ea3c930e1": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work is identified only as 'Study [14] Bayesian Networks', with no title, authors or year, so I cannot tell which publication it is or check whether it uses Bayesian Networks to forecast road traffic accidents. No evidence passages were provided.\", \"evidence_ids\": []}",
+  "latency_s": 3.5047668229999545
+ },
+ "86b94d9d8bb1b8a716460fb31606efb2ac24cb5de5dacc7e35fc2ff7a9ebeba8": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The evidence contains only a placeholder description of Wang [46] (an author named Wang working on feature selection) and the citing sentence itself; the cited work's content, authorship and collaborator counts are not described. Its support for the claim about having the largest number of collaborators therefore cannot be verified.\", \"evidence_ids\": [\"Wang [46]\", \"Authors Named Wang have the largest number of collaborators in feature selection research\", \"1\"]}",
+  "latency_s": 3.403500792000159
+ },
+ "4bcff81b35bb3d25d02ce064fef1cfae40ddc56b7f9f8a1619e7222750538905": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work is identified only as \\\"Wang [46]\\\" with no title, venue or year, so I cannot pin down which paper it is or check whether it is a feature selection paper by a highly collaborative author Wang. Without knowing the specific work, I cannot judge whether it supports the co-authorship cluster claim.\", \"evidence_ids\": []}",
+  "latency_s": 4.226509888999317
+ },
+ "3191cb4360df9a0d0e96b514e13f8b8a3461137b20448e83b61777f544e7ec93": {
+  "text": "{\"label\": \"partially_supports\", \"rationale\": \"The evidence confirms that [27] (Rasmussen et al., 2023) addresses supplier selection in the aerospace and defense industry using MCDM methods, which fits the sector part of the sentence. It does not show which specific method [27] uses (AHP, AHP-TOPSIS, fuzzy TOPSIS or FAHP-TOPSIS), so the methodological part is unverified.\", \"evidence_ids\": [\"Supplier Selection for Aerospace & Defense Industry Through MCDM Methods\", \"Study [27]\", \"1\"]}",
+  "latency_s": 5.4239170769997145
+ },
+ "325ae155e5dcc9336198a89a45d22cc5aa21b8400f48149d58ab7f727ec8a996": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work is identified only as \\\"Study [27]\\\" with no title, authors, or content, so I cannot tell which aerospace and defense supplier-selection study it is or which MCDM method it used. Without knowing the work, I cannot judge whether it supports the claim.\", \"evidence_ids\": []}",
+  "latency_s": 3.6526141699996515
+ },
+ "437929391e55f026f94f4bc6ed7ded86d5c26e574711d422b9a0b665402a418c": {
+  "text": "{\"label\": \"partially_supports\", \"rationale\": \"The bibliographic entry for [28] (\\\"Shewhart control charts implementation for quality and production management\\\", Processes 2023) independently confirms that the work uses Shewhart control charts for quality management. The specific claims about plastic moldings and automotive requirements come only from the citing article's own summary, not from the cited work's text.\", \"evidence_ids\": [\"Shewhart Control Charts Implementation for Quality and Production Management\", \"Malindzakova et al. [28] Shewhart Control Charts for Plastic Moldings\", \"1\"]}",
+  "latency_s": 6.365814818999752
+ },
+ "f60d0ad8b3129ac4bd2e28e256c121be4926777e490269faa4c4ae63b29c1b69": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"From what I recall, Malindzakova et al. applied Shewhart control charts to quality characteristics of plastic moldings made for the automotive industry, which matches the citing sentence. This rests on recall and on the cited title, not on checking the paper's text.\", \"evidence_ids\": []}",
+  "latency_s": 6.123890056999699
+ },
+ "0325baeebbabf2fd033ab7f0e13d04335c41c252cc032fab87181039865af1ac": {
+  "text": "{\"label\": \"partially_supports\", \"rationale\": \"The bibliography entry for [14] (Cohen et al., Eur Radiol 2023) has a title showing it studies AI accuracy for wrist fracture detection on radiographs, which matches the core topic of the citing sentence. However, no content from the cited paper confirms that it specifically used deep neural networks; that detail comes only from the citing article's own description.\", \"evidence_ids\": [\"Artificial Intelligence vs. Radiologist: Accuracy of Wrist Fracture Detection on Radiographs\", \"Cohen et al. [14]\", \"4\"]}",
+  "latency_s": 7.78541730500001
+ },
+ "77ba11c237c3d69e645f1d402f0517afe46ae4410f2dc0c2816e390f331b0d9f": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work is identified only as \\\"Cohen et al. [14]\\\", with no title, year or venue, so I cannot reliably tell which publication is meant. A plausible candidate is Cohen et al. (2023, European Radiology) on AI detection of wrist fractures on radiographs, but without confirmation I cannot verify that it supports the claim.\", \"evidence_ids\": []}",
+  "latency_s": 8.73350480299996
+ },
+ "414fddd5e59425204f29fe509b208ca035fd9ec33cf0d52601f4a512dba15ed9": {
+  "text": "{\"label\": \"partially_supports\", \"rationale\": \"Ref [15] (Chen and Dhahbi, Scientific Reports 2021) applies overlapping feature selection methods to gene expression analysis for lung cancer classification and biomarker identification, which supports the bioinformatics gene expression claim. Nothing in the evidence shows it addresses protein structure prediction, so that part of the sentence is unsupported.\", \"evidence_ids\": [\"Lung Adenocarcinoma and Lung Squamous Cell Carcinoma Cancer Classification, Biomarker Identification, and Gene Expression Analysis Using Overlapping Feature Selection Methods\", \"Ref [15] Bioinformatics\", \"1\"]}",
+  "latency_s": 5.181465159999789
+ },
+ "a965c4238b35bb459fb69103338b2057bc1baf471a9fdbf460e76aeaf39cdc07": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work is identified only by the generic title \\\"Bioinformatics\\\", which could be a journal name or any of many works, so I cannot tell what it contains. Without knowing the work, I cannot judge whether it covers feature selection for gene expression analysis and protein structure prediction.\", \"evidence_ids\": []}",
+  "latency_s": 3.680332900000394
+ },
+ "b55048dcdbc29492436208659a5d0e28c69681befa2f4436403460d721e59056": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The bibliography identifies [13] as Godina et al., 'Improvement of the Statistical Process Control Certainty in an Automotive Manufacturing Unit', but the evidence has only its title and no content showing it discusses SPC's normality assumption. The other passages describe the citing article's own claim, not the cited work.\", \"evidence_ids\": [\"Improvement of the Statistical Process Control Certainty in an Automotive Manufacturing Unit\", \"Ref [13] Normal Distribution Assumption\", \"1\"]}",
+  "latency_s": 4.5907772699993075
+ },
+ "0fdcd4408d21717efa337ae71516d0691326b244e849c074137578189d4d5fa7": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work is identified only by a placeholder title (\\\"Ref [13] Normal Distribution Assumption\\\"), with no authors, venue, or year, so I cannot identify it or verify what it actually says. The statement that control charts often assume normality is standard in SPC, but that alone does not establish what this particular reference contains.\", \"evidence_ids\": []}",
+  "latency_s": 4.155244868000409
+ },
+ "79acd293ee4e9fc54d9f6eb77d91ccbea3c9f43353d14509efa2152fe020935b": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The evidence identifies Ref [3] only through its bibliography entry (Anand and Sasikala, 2019, an energy-optimization AODV protocol paper) and the citing sentence itself; none of its content is provided. The entity description that it is a source on MANET packet forwarding is derived from the citing sentence, so whether the cited work actually substantiates the statement cannot be verified.\", \"evidence_ids\": [\"1\", \"Ref [3] MANET Packet Forwarding\", \"MANET nodes forward packets via intermediate nodes\"]}",
+  "latency_s": 5.268998808000106
+ },
+ "9419dec52d0b3ddac1dfa44a2aee44bb79cd23ef661d30272ac1dd5793a95cd4": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work is identified only as \\\"MANET Packet Forwarding,\\\" which is too vague to pinpoint a specific publication I know well enough to verify. No evidence was provided, so I cannot confirm whether it substantiates the description of multi-hop forwarding through intermediate nodes.\", \"evidence_ids\": []}",
+  "latency_s": 3.77979538100044
+ },
+ "a6fcd91818fc5533609e050563eb0db90c5aa0b361ff461f166e940d8214c375": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"The cited work's title, 'B2C e-commerce customer churn prediction based on k-means and SVM', and its graph description both state that it proposes a B2C e-commerce churn prediction model that combines k-means customer segmentation with SVM prediction. This matches the citing sentence exactly.\", \"evidence_ids\": [\"Xiahou and Harada [17]\", \"B2C E-Commerce Customer Churn Prediction Based on K-Means and SVM\", \"K-Means\", \"SVM\", \"1\"]}",
+  "latency_s": 3.6163875060001374
+ },
+ "e5fcc8df08fce09a4a2b0f7cc58490c1998fdd2fe787a8badc24b9ee1e3c7370": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"Xiahou and Harada (2022, Journal of Theoretical and Applied Electronic Commerce Research), \\\"B2C E-Commerce Customer Churn Prediction Based on K-Means and SVM\\\", proposes a churn model for B2C e-commerce that first segments customers with k-means and then predicts churn with SVM. This matches the citing sentence; the identification relies on my recall of the paper, since no evidence was provided.\", \"evidence_ids\": []}",
+  "latency_s": 5.705275975999939
+ },
+ "2ce55e59a7fcf1d249250c9e99035b9d4d1e9f0578ecc6669e051c512e27577d": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The only information about Ref [12] comes from the citing article's own sentence, and the provided reference list chunk does not show the bibliographic entry or any content from the cited work. There is therefore no independent evidence about its methods, accuracy, or the explainability it offers operators.\", \"evidence_ids\": [\"Ref [12] Interpretable ML for Hard Drive Failure Prediction\", \"Intelligent Predictive Maintenance Using Fuzzy Bayesian Networks for Critical IT Components\", \"1\"]}",
+  "latency_s": 6.2479659070004345
+ },
+ "5199666b50288d3e96846135fb89bc734b6b24e8d36ba57cb1f666f0930ba7fb": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The citation gives only a generic title, 'Interpretable ML for Hard Drive Failure Prediction', with no authors, venue or year, so I cannot pin it to a specific paper I know well enough to check its contents. The title matches the topic of the sentence, but without knowing the actual work I cannot confirm it reports both accurate prognostics and explainable insights for system operators.\", \"evidence_ids\": []}",
+  "latency_s": 3.909925906999888
+ },
+ "e90fc3653564299ebe6852d917f765acc99bdd4143b1e189579a4a6b4772719c": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"The bibliography entry for [17] is \\\"Using Bayesian networks and fuzzy logic to predict warehouse planning disruption risks\\\" (Abdelilah, Azmani & Azmani, ITEGAM-JETIA 2025), and its title alone directly matches the claim that fuzzy Bayesian approaches have been applied to predict warehouse planning disruption risks. No full-text passage of [17] is available, but the title and the knowledge-graph relationships (combining fuzzy logic with Bayesian networks for that purpose) are consistent with the statement.\", \"evidence_ids\": [\"Using Bayesian networks and fuzzy logic to predict warehouse planning disruption risks\", \"Ref [17] Fuzzy Bayesian Warehouse Disruption Risk\", \"3\"]}",
+  "latency_s": 6.4337264690002485
+ },
+ "8cded175dc3e3e85b3fc28bfa4992d6e1083815b6e97af46328d7b3007b6a6ad": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work is identified only by a short descriptive label, not a full bibliographic reference, so I cannot confirm what it reports about applying fuzzy Bayesian methods to warehouse disruption risk. The title suggests it is on topic, but that is not enough to verify support.\", \"evidence_ids\": []}",
+  "latency_s": 4.7180100510004195
+ },
+ "fb0f6ef6025bef13c44a4d1ff576c94a5ad74eea5eb1ddda5efe2b9161ee220f": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"The cited work, Huang et al., \\\"Calibration of cavity pressure simulation using autoencoder and multilayer perceptron neural networks\\\" (Polym. Eng. Sci., 2021), proposes a machine learning model that corrects simulated mold cavity pressure toward actual values in injection molding. Its premise is the discrepancy between simulation and actual results, so it matches the citing statement.\", \"evidence_ids\": [\"Huang et al. [32]\", \"1\", \"Polymer Engineering and Science\"]}",
+  "latency_s": 4.04892190999999
+ },
+ "259e09c288569b88e227b123afd8857856615ebbac13ea45db012151295757d3": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"Only the label \\\"Huang et al. [32]\\\" is available, with no title, venue, or year, so the cited paper cannot be reliably identified. No evidence was provided, and I cannot confirm from my own knowledge that this work addresses discrepancies between simulated and actual polymer melt flow in injection molding.\", \"evidence_ids\": []}",
+  "latency_s": 3.7447316440002396
+ },
+ "8840760ea728292c4284e42ec2bf75ea53849a6fdc73a96e791006a77138936a": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The only description of Ref [20] comes from the citing sentence itself, and the retrieved reference list stops at [11], so neither the bibliographic details nor the content of the cited microarray study are available. The evidence therefore cannot confirm that [20] analyzes feature selection research trends in microarray data.\", \"evidence_ids\": [\"Ref [20] Microarray Research Trends\", \"1\"]}",
+  "latency_s": 4.321852002000014
+ },
+ "8eb1027baa187af5bca647ebbebd65be01ebe8931739934b69ec3d43461921f9": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work is identified only as \\\"Microarray Research Trends,\\\" which is too vague for me to pin down a specific publication I know. Without being able to identify it, I cannot verify whether it covers feature selection trends in microarray research as the sentence implies.\", \"evidence_ids\": []}",
+  "latency_s": 3.6376770180004314
+ },
+ "55df87add91bcf3970c8fe2da28d5d74c99983b6b9fd09f70410d1740e5dc18b": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The only evidence about Ahola et al. (2014) is its reference entry, a study of the relationship between burnout and depressive symptoms using a person-centred approach, and nothing describes its content on absenteeism, turnover, productivity, accidents, or physical and social health effects. The title suggests a different focus, but without the paper's content its support for the organizational claims cannot be judged.\", \"evidence_ids\": [\"1\", \"Ahola et al., 2014\", \"Burnout harms organizations through absenteeism, turnover and reduced productivity\", \"Burnout causes social effects such as job dissatisfaction and exhaustion\"]}",
+  "latency_s": 7.175198334000015
+ },
+ "ce16bd5604e24c0f7599a114494040ad8e87ced6df0e1f44ac92fe1c0135f309": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The reference \\\"Ahola et al., 2014\\\" is ambiguous. It may be Ahola & Hakanen's 2014 chapter \\\"Burnout and health\\\", which mainly covers health consequences rather than absenteeism, turnover, productivity or accidents, but I can't confirm the exact work or its coverage of the organizational outcomes claimed.\", \"evidence_ids\": []}",
+  "latency_s": 8.767054812000424
+ },
+ "1ed91a37096a79b2e5f7b7229fd15d75d42cdd95f993ffb99ac81db3b6c6c737": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"The cited work's bibliographic title, 'Adaptive Fuzzy Inference System for Detection and Prevention of Cooperative Black Hole Attack in MANETs' (Hiremath, Anuradha, Pattan, ICIS 2016), directly matches the claim that it developed a method for detecting and preventing cooperative black hole attacks in MANETs. Its focus on black hole attacks also fits the background statement that such attacks drop data packets and lower network performance, though the cited paper's own text on packet dropping is not shown.\", \"evidence_ids\": [\"Adaptive Fuzzy Inference System for Detection and Prevention of Cooperative Black Hole Attack in MANETs\", \"Hiremath et al. [33] (Adaptive FIS Against Cooperative Black Hole Attack)\", \"Black hole attacks drop data packets and lower network performance\", \"1\"]}",
+  "latency_s": 6.943211038999834
+ },
+ "137278bd0bc903094c3c8cde91d5c9df5e5a5f57c1cb7d99e392d9f80145a808": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"Hiremath et al.'s work proposes an adaptive fuzzy inference system to detect and counter cooperative black hole attacks in MANETs, an attack defined by malicious nodes dropping data packets and degrading network performance. This matches both citing sentences, though my recall of the paper's exact wording is only moderate.\", \"evidence_ids\": []}",
+  "latency_s": 5.462449096000455
+ },
+ "4bc6d81af888f8c7de760b506f87829df3e9ae2b614c9082e0a26ce51a079137": {
+  "text": "{\"label\": \"partially_supports\", \"rationale\": \"The bibliographic entry confirms that [33] (Nasir et al., Security and Communication Networks, 2018) is a performance analysis of Hyperledger Fabric platforms, which supports the 'early performance analysis' part of the sentence. No passage from the cited work itself confirms the specific claim that it examined latency, throughput and scalability under different settings; that detail appears only in the citing article's own wording.\", \"evidence_ids\": [\"Performance Analysis of Hyperledger Fabric Platforms\", \"Nasir et al. [33] Performance Analysis of Hyperledger Fabric\", \"1\"]}",
+  "latency_s": 7.615799245000744
+ },
+ "10e87f6ccc7b9160ef546026dc850521b4c719e693fc4730dc9022c20bfb30a6": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"Nasir et al. (2018), 'Performance Analysis of Hyperledger Fabric Platforms,' is an early empirical study. It compared Fabric v0.6 and v1.0 on execution time, latency and throughput across varying workloads and numbers of nodes, which covers scalability. This matches the citing sentence.\", \"evidence_ids\": []}",
+  "latency_s": 5.417193706000035
+ },
+ "718820a90b3578d08d9ebca6d86f6e6bc68c4954b5a12bbc259577ccddc90b49": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The evidence only repeats the citing sentence and gives a truncated bibliographic entry for [2] (an IJAIEM 2013 paper whose title ends in 'applications'). No content from the cited work itself shows it describes instant, temporary multimedia networks in conferences, classrooms, stadiums, ships or aircraft.\", \"evidence_ids\": [\"Ref [2] MANET Instant Multimedia Networks\", \"MANETs suit instant temporary networks in civilian settings\", \"1\"]}",
+  "latency_s": 4.783573411999896
+ },
+ "7a9e9b533cb4009401255376da2f464a648352139ac9a5d1086ada5e6479a241": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work 'MANET Instant Multimedia Networks' is not identifiable with enough specificity from my own knowledge to confirm whether it lists those deployment scenarios (conferences, classrooms, stadiums, ships, small aircraft). No evidence was provided to verify the claim.\", \"evidence_ids\": []}",
+  "latency_s": 3.7832369999996445
+ },
+ "378b7f74f601c8f65c979c8b2ed9a7b5b787ba21c71d80a5b8020bc3a2b9a2b8": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The evidence shows only the citing article's own sentence and the knowledge-graph entries derived from it; nothing describes the content of Reference [21] itself. It therefore cannot be verified whether that work establishes bagging as the training principle of Random Forest.\", \"evidence_ids\": [\"Bagging Reference [21]\", \"Random Forest training is based on bagging\", \"3\"]}",
+  "latency_s": 4.748870731999887
+ },
+ "7a161ab459987edaca24ba4391226edfbbb23a9187946aad6994f792c6409003": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"The cited work appears to be Breiman's 1996 paper introducing bagging (bootstrap aggregating), the foundational reference for the bagging principle that random forest-type ensembles use in training. The reference metadata is minimal, so this identification is somewhat uncertain.\", \"evidence_ids\": []}",
+  "latency_s": 5.672719117999804
+ },
+ "49bcf848da118ce1215fb9d58a712dee20193dc131fe95b79984704a1104771c": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"Reference [18] in the citing article's bibliography is Boukrouh, Azmani and Khalfaoui (2024), 'Modeling and managing product unavailability risk in inventory through a fuzzy Bayesian network', and the knowledge graph records that it uses a fuzzy Bayesian network to model inventory unavailability risk. This matches the claim, though the evidence comes from the bibliographic record rather than the paper's own text.\", \"evidence_ids\": [\"Modeling and managing product unavailability risk in inventory through a fuzzy Bayesian network\", \"Ref [18] Fuzzy Bayesian Inventory Unavailability\", \"1\"]}",
+  "latency_s": 8.38486100099999
+ },
+ "c8e0aae7b813f6224f10d17474e280b1db1a38f6c88f3643216f4ba952af5653": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work is identified only by a vague placeholder title (\\\"Fuzzy Bayesian Inventory Unavailability\\\"), and I cannot reliably recognize a specific publication on fuzzy Bayesian methods for inventory unavailability. Without knowledge of its content, I cannot confirm whether it supports the claim.\", \"evidence_ids\": []}",
+  "latency_s": 3.899009063000449
+ },
+ "7cb91c1cdf4e8d77dc31ed585151523faac4beee9a2ba35e1ed192ee7de99637": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The only evidence about Radford et al. (7) comes from the citing review's own Table 1, which attributes DCGAN to that work; no passage from Radford et al. itself is provided. The claim that DCGAN is known for high-quality image generation therefore cannot be checked against the cited work.\", \"evidence_ids\": [\"Radford et al. (7)\", \"Deep Convolutional GAN\", \"1\"]}",
+  "latency_s": 5.988313142000152
+ },
+ "a8c5c05de6fdc782788300fcfc394e160555aac866dede5c1ab5216e369411d2": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"Radford, Metz and Chintala (2015) introduced DCGAN, \\\"Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks.\\\" It showed convolutional GAN architectures that train stably and produce high-quality images, so it supports the Table 1 entry.\", \"evidence_ids\": []}",
+  "latency_s": 3.692104482999639
+ },
+ "0f3f6de359d304706d7383d3cb899639a346f1ce2239aead2e83271a0d8e180e": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"The bibliography identifies [15] as Khullar, Malhotra and Kumar's 'Decentralized and secure communication architecture for FANETs using blockchain', and the knowledge graph describes it as a decentralized FANET authentication approach using a blockchain-based PKI to share public keys. However, the cited paper's own text is not available, so this judgment relies on the citing article's description plus a matching title (the listed DOI duplicates that of [14]).\", \"evidence_ids\": [\"Kashish et al. [15]\", \"Decentralized and Secure Communication Architecture for FANETs Using Blockchain\", \"Blockchain-Based Public Key Infrastructure\", \"1\"]}",
+  "latency_s": 7.5820223519995125
+ },
+ "f1ea44b3eab0866f70b22648dd1d99c7e08e5b791734d752d1574c6f4196ab46": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work is identified only as \\\"Kashish et al. [15]\\\" with no title or venue, and I cannot reliably recall a specific paper by that author proposing blockchain-based PKI authentication for FANETs. Without evidence I cannot confirm whether it supports the claim.\", \"evidence_ids\": []}",
+  "latency_s": 3.7675970089994735
+ },
+ "ab2a86c2baa39bade383e8426132af8071aa63580afaa6f9c9314014c882f9ac": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"In the citing article's bibliography, Ref [8] is Nyanga et al. (2016), 'Design of a multi agent system for machine selection.' A separate document independently describes this work as using a multi-agent system with AHP-established criteria, with quality, time and cost as key parameters, to select the most suitable machine for production orders, which matches the citing sentence.\", \"evidence_ids\": [\"3\", \"1\", \"Ref [8] Multi-Agent System and AHP for Machine Selection\", \"Design of a Multi Agent System for Machine Selection\", \"Machine Selection\"]}",
+  "latency_s": 7.627233217999674
+ },
+ "508559a6eff2f01a85ea51b8c7f51fb4b3006d7124a36cbe0f6cd27c69615a85": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work is identified only by a generic descriptive title with no authors, venue, or year, and I cannot reliably identify which specific paper it is or verify its content. The title matches the claim on the surface, but without knowing the work I cannot confirm the details about quality, time, and cost criteria.\", \"evidence_ids\": []}",
+  "latency_s": 3.736902084000576
+ },
+ "a0ac14a9afe38d7e66840c2996d5e7122fdd512206203bfdbc8dfc056c0e80f3": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"The knowledge-graph entity for Baghla and Gupta [5] describes an e-commerce churn study using neural network, SVM, NB, RF and the Adam deep learning technique, which matches the citing sentence. This description appears to derive from the citing article's own summary rather than the cited paper's text.\", \"evidence_ids\": [\"Baghla and Gupta [5]\", \"Adam\", \"Baghla and Gupta [5] -> E-Commerce\", \"Artificial Neural Networks -> Baghla and Gupta [5]\", \"Baghla and Gupta [5] -> Support Vector Machines\", \"Baghla and Gupta [5] -> Naive Bayes\", \"Baghla and Gupta [5] -> Random Forests\", \"Adam -> Baghla and Gupta [5]\", \"1\"]}",
+  "latency_s": 8.31951896299961
+ },
+ "a36e5882ea099a467d2b42cf14338f1dca112c9034800c59af8680523cf09cf7": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"I only vaguely recall a Baghla and Gupta study on e-commerce churn prediction comparing classifiers. I can't confirm from my own knowledge that it used exactly neural network, SVM, NB, RF and an 'Adam' deep learning technique, so I can't verify the statement.\", \"evidence_ids\": []}",
+  "latency_s": 5.430713783999636
+ },
+ "89d12bc2487d11fdb045aea8b46f0c0f85b716c8ed60de30c2b91d9bc7d560a2": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"The knowledge graph describes Dickson 1966 [15] as early research on supplier selection and evaluation, based on a survey of 274 companies, and G. W. Dickson's 1966 paper as an analysis of vendor selection systems and decisions. This matches the citing sentence, although the survey details come only from the citing article's own summary rather than from Dickson's text.\", \"evidence_ids\": [\"Dickson 1966 [15]\", \"Dickson 1966 Supplier Selection Survey\", \"Dickson 1966 [15] -> Supplier Selection\", \"G. W. Dickson\", \"An Analysis of Vendor Selection Systems and Decisions -> Supplier Selection\", \"1\"]}",
+  "latency_s": 12.022430971000176
+ },
+ "2088ab31f8bd0f450098b7d605d0debd5fd8fc7fa27a1d8469b0275f084cf3e2": {
+  "text": "{\"label\": \"partially_supports\", \"rationale\": \"Dickson (1966), 'An analysis of vendor selection systems and decisions' (Journal of Purchasing), is the foundational supplier selection study and did use a survey. However, as I recall it mailed questionnaires to 273 purchasing agents and managers (about 170 responded), not '274 companies', so the specific figure and unit are not substantiated.\", \"evidence_ids\": []}",
+  "latency_s": 5.9983185439996305
+ },
+ "6db4ae143e06cd7ab87b9c8355866e3017cc81724cd329de70d6473bd97579ba": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"Ref [2] is P. W. Shor's 1994 paper 'Algorithms for quantum computation: Discrete logarithms and factoring', which presents polynomial-time quantum algorithms for the discrete logarithm and factoring problems. These are the foundation of the claimed quantum vulnerability of ECDSA-based mechanisms.\", \"evidence_ids\": [\"1\", \"Ref [2] Shor's Algorithm\", \"Shor's Algorithm\", \"Algorithms for Quantum Computation: Discrete Logarithms and Factoring\", \"ECDSA is vulnerable to Shor's algorithm\"]}",
+  "latency_s": 4.426350339999772
+ },
+ "22050d04a60439762cc8bddfcbc18a8c9ffe36bb9f1c8f815d0944a46e459d3f": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"Shor's work presents polynomial-time quantum algorithms for integer factoring and discrete logarithms, which break RSA and elliptic-curve schemes such as ECDSA. That directly backs the claim that these signature mechanisms are vulnerable to large-scale quantum attacks.\", \"evidence_ids\": []}",
+  "latency_s": 4.614713418000065
+ },
+ "debd810ad8949f6400ea2f6ccadbc4f2409a67d6112cf2bcd72748448d9de20a": {
+  "text": "{\"label\": \"partially_supports\", \"rationale\": \"In the citing paper's bibliography, reference [21] is Hong and Oh's 'TPR-TNR plot for confusion matrix' (CSAM 2021), which deals with confusion matrices and rates derived from their cells. The evidence only says it proposes a TPR-TNR plot, so it does not confirm that the work defines the TP/FP/TN/FN outcome of each cell.\", \"evidence_ids\": [\"3\", \"TPR-TNR Plot for Confusion Matrix\", \"Reference [21] on Confusion Matrix Outcomes\", \"Each confusion matrix cell represents a specific outcome\"]}",
+  "latency_s": 7.1984252969996305
+ },
+ "e340f940b19f14c1cc3ec264f1094f8c848f251f0902418aba46bd237c609719": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work is identified only as a generic placeholder ('Reference [21] on Confusion Matrix Outcomes'), so I cannot tell which publication it is or what it says. Without knowing the actual work, I cannot check whether it supports the statement that each confusion-matrix cell represents a specific outcome.\", \"evidence_ids\": []}",
+  "latency_s": 3.9257105599999704
+ },
+ "30a4258763fbe077e6bafe9533bb46041b639ecc795aea89a6c6b721c16a4dda": {
+  "text": "{\"label\": \"partially_supports\", \"rationale\": \"The bibliographic entry for [27] (Raza et al., Healthcare 2024) confirms that the work compares MSD prevalence in heavy vehicle drivers and office workers using a machine learning approach. The specific use of decision tree, random forest and na\u00efve Bayes is stated only by the citing article itself and is not independently confirmed for the cited work.\", \"evidence_ids\": [\"Prevalence of Musculoskeletal Disorders in Heavy Vehicle Drivers and Office Workers: A Comparative Analysis Using a Machine Learning Approach\", \"Raza et al. [27]\", \"1\"]}",
+  "latency_s": 6.268408447999718
+ },
+ "ba791f85255aba053e2af5223a099b6d93ddd865b499d490372cad683f05e5bc": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work is identified only as 'Raza et al. [27]' with no title, year, or venue, and I don't know it well enough to confirm that it compared MSD prevalence in truck drivers and office workers using decision tree, random forest, and na\u00efve Bayes. Without verifiable knowledge of its content, I can't judge whether it supports the statement.\", \"evidence_ids\": []}",
+  "latency_s": 5.103942419999839
+ },
+ "09e55e4a15b1d066429ab1c9b4b82b64f63ee0892d7a2b5310057bde748e0404": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"Reference [4] is FIPS 204: Module-Lattice-Based Digital Signature Standard, which standardizes ML-DSA, and the knowledge graph consistently describes it as defining ML-DSA-44, ML-DSA-65 and ML-DSA-87 for NIST categories 2, 3 and 5 (also shown in Table 3). Note that this description comes from the citing paper's own account; the text of FIPS 204 itself is not among the retrieved passages.\", \"evidence_ids\": [\"FIPS 204\", \"FIPS 204: Module-Lattice-Based Digital Signature Standard\", \"FIPS 204 -> ML-DSA-65\", \"NIST Security-Strength Categories\", \"1\"]}",
+  "latency_s": 7.093108546000622
+ },
+ "6f3894a72ddfce531151dc4e8b9dadddddcf2c45d34c01d573fd5db9b6ec4e63": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"FIPS 204 (August 2024) specifies three ML-DSA parameter sets: ML-DSA-44, ML-DSA-65 and ML-DSA-87, which correspond to NIST security categories 2, 3 and 5. This matches both citing sentences, including the statement that ML-DSA-65 is the category 3 set.\", \"evidence_ids\": []}",
+  "latency_s": 4.731739666000067
+ },
+ "db5261178a997a255562c20d9bb1e5c1485adddfbf0e3d6b0f51d46edfd5a1a8": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"The knowledge graph describes Lin and Yang [5] as developing an AHP-based model, prototype framework and software for choosing the most appropriate machine for specific parts, which matches the citing sentence. This description comes only from the citing article's own summary, since the reference list entry for [5] is not shown, so the cited paper itself is not directly verified.\", \"evidence_ids\": [\"Lin and Yang [5]\", \"Lin and Yang [5] -> Machine Selection\", \"1\"]}",
+  "latency_s": 6.829001418999724
+ },
+ "418245149783843b7931633164dd6ea79819f875d4e0a7cdc562e24de8e98699": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"Lin and Yang most likely refers to Lin & Yang, 'Evaluation of machine selection by the AHP method' (Journal of Materials Processing Technology, 1996), which applies AHP to choose the most suitable machine. The match rests on the author pair and topic only, since the reference gives no title, so some identification uncertainty remains.\", \"evidence_ids\": []}",
+  "latency_s": 6.203300380000655
+ },
+ "824947796cddd994903af200346f64fb62936ce00bafda3b4e9a02b355064ec9": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"Everything known about Yoon 1987 [9] comes from the citing paper's own sentence. The graph labels it as 'further elaborated TOPSIS' and names K. Yoon as author of [9], but there is no title, content or passage from the cited work to show it elaborates TOPSIS.\", \"evidence_ids\": [\"Yoon 1987\", \"K. Yoon\", \"1\"]}",
+  "latency_s": 4.604125642999861
+ },
+ "4a90f9f3e062635b96e3810e4945c62727195d500f167bdf3c1529b073739635": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"Yoon (1987), 'A reconciliation among discrete compromise solutions' (J. Oper. Res. Soc.), further developed and discussed TOPSIS as a compromise method for ranking discrete alternatives, building on Hwang and Yoon (1981). It is the standard citation for the later elaboration the sentence attributes to it.\", \"evidence_ids\": []}",
+  "latency_s": 5.333384452000246
+ },
+ "63369b489c31ef87cf92700795c7240fa0dc1ffc685622fe91ebd47c70cb5828": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The evidence only identifies the cited work [7] by title, venue (Electronics MDPI, 2023) and its use of a Fabric-based multi-channel structure for connected-vehicle data sharing; no passage from the work describes permissioned ledger access, verifiable transactions or immutable records. Whether it substantiates the specific statement therefore cannot be confirmed.\", \"evidence_ids\": [\"Hyperledger Fabric-Based Multi-Channel Structure for Data Sharing in Connected Vehicle Networks\", \"Multi-Channel Structure\", \"4\"]}",
+  "latency_s": 4.558106016999773
+ },
+ "87293d74a48810ef5d8922fc0b24886ba3de11987d63c38b270c7176e6e12fb4": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"As far as I recall, this work proposes a multi-channel Hyperledger Fabric architecture for sharing data among connected-vehicle participants, relying on Fabric's permissioned, channel-based access to a shared, tamper-resistant ledger, which matches the cited statement's generic description of Fabric. My familiarity with the paper's details is limited, so this judgment rests mainly on its stated scope.\", \"evidence_ids\": []}",
+  "latency_s": 7.939396106999993
+ },
+ "8c904d9f10ce2e09c39746d451db048930905bd265d4b1f1811022546df3bbc3": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"Reference [23] is Amin, Adnan and Anwar's \\\"An adaptive learning approach for customer churn prediction in the telecommunication industry using evolutionary computation and na\u00efve Bayes\\\", which proposes a Naive Bayes-based churn prediction approach with genetic-algorithm feature weighting. This matches the citing sentence's description of a novel learning approach for churn prediction using the NB classifier.\", \"evidence_ids\": [\"Amin et al. [23]\", \"Amin et al. [23] -> Naive Bayes\", \"An Adaptive Learning Approach for Customer Churn Prediction in the Telecommunication Industry Using Evolutionary Computation and Na\u00efve Bayes\", \"1\"]}",
+  "latency_s": 4.077181388000099
+ },
+ "0707b947b73b0b76c39b7eb83ac07b7bfb1e01826f486b80c9b750c0b3840182": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The citation names only \\\"Amin et al. [23]\\\", and several Amin et al. churn papers exist, including the cross-company and just-in-time telecom churn studies that used Naive Bayes, so I cannot be sure which work is meant. Without confirming the specific paper, I cannot verify that it proposes an innovative learning approach using the NB classifier.\", \"evidence_ids\": []}",
+  "latency_s": 6.663568209000005
+ },
+ "79251bfe962e994f145bf3643d3009580ffb6e80ff208fb8768ee48d10b46890": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"All available evidence comes from the citing article (Bouhsaien & Azmani, 2024), which attributes these statements to Boucherit & Mazouz (2023). No passage or entity describes the content of the cited work itself, so it cannot be confirmed that it addresses harassment, depression or this definition of stress.\", \"evidence_ids\": [\"1\", \"Boucherit & Mazouz, 2023\", \"Harassment and stress lead to depression and work incapacity\", \"Stress arises from challenging work, high demand or external pressures\"]}",
+  "latency_s": 5.025112291999903
+ },
+ "9e4c68dec2c40e1d4661d8668f516c9df3140b41a24c8a7c86c903accb9e7553": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"I am not familiar enough with Boucherit & Mazouz (2023) to confirm whether it describes workplace harassment and stress leading to depression, or whether it defines stress as arising from challenging work, high demands, or external pressures. No evidence was provided to verify the claim.\", \"evidence_ids\": []}",
+  "latency_s": 3.600858675999916
+ },
+ "5df2c8e9779f71564b2aabdc5d8cf066bd7a885426eea3145f0fb03aeaf7f5ba": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The only evidence about Ha et al. (2021) is the citing paper's own restatement (about 93% accuracy with CNN and edge detection on about 3,800 injection-molding images, used as a baseline). No passage or entity from the cited work itself confirms these figures.\", \"evidence_ids\": [\"Ha et al. (2021)\", \"1\"]}",
+  "latency_s": 4.3573260080002
+ },
+ "1a0fc55c26bd2227e4dfffcf67c49f6bc6379bcea85ee6da58a0967a354734a1": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"I do not know the specific Ha et al. (2021) work on CNN and edge detection for injection molding well enough to confirm the reported ~93% accuracy or the ~3,800-image dataset size. No evidence was provided to verify the claim.\", \"evidence_ids\": []}",
+  "latency_s": 3.4366838120004104
+ },
+ "ba1f30e822e2613083303538f1e9c2160f6b02e0ae416cfecf805ea0533f2f96": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"The knowledge-graph entry for Uyanik and Sahin [1] describes an automated code generation tool for TBYS web development, and the TBYS entity identifies TBYS as an ERP system developed by T\u00dcSS\u0130DE, which matches the sentence. This support is circular, though: every description comes from the citing article's own review (chunk 1), and no text from the cited work itself was retrieved.\", \"evidence_ids\": [\"Uyanik and Sahin [1]\", \"TBYS\", \"Turkish Management Sciences Institute (T\u00dcSS\u0130DE)\", \"This Paper -> Uyanik and Sahin [1]\", \"1\"]}",
+  "latency_s": 7.98996881200037
+ },
+ "788aaf515603f660a72c1698c94d10f273fd82c9c473415e970ebfb42f30b56a": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"I do not know the Uyanik and Sahin paper well enough to confirm that it presents an automated code generation tool for TBYS, T\u00dcSS\u0130DE's ERP system. No evidence was provided to verify the claim.\", \"evidence_ids\": []}",
+  "latency_s": 4.35017167100068
+ },
+ "37b844edb6b558409f280783497ba3de5d7185af16eea98c6b4025731af94e3d": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"Reference [13] is Zhao, Obonyo and Bil\u00e9n, \\\"Wearable Inertial Measurement Unit Sensing System for Musculoskeletal Disorders Prevention in Construction\\\" (Sensors, 2021), a wearable IMU system for preventing MSDs in construction workers, which matches the citing sentence. The evidence is limited to the title and the knowledge-graph descriptions of the paper, with no passage from the cited paper itself.\", \"evidence_ids\": [\"Wearable Inertial Measurement Unit Sensing System for Musculoskeletal Disorders Prevention in Construction\", \"Zhao et al. [13]\", \"1\"]}",
+  "latency_s": 4.0715831480001725
+ },
+ "3a94726445188ef072a26c85c648cc233c835f571129666c34ccd9c5a58772e4": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"The reference is most likely Zhao, Obonyo & Bil\u00e9n (2021, Sensors), 'Wearable Inertial Measurement Unit Sensing System for Musculoskeletal Disorders Prevention in Construction,' which built a wearable IMU system to detect awkward postures and MSD risks in construction workers. This matches the citing sentence, but the exact identity of reference [13] cannot be confirmed from the information given.\", \"evidence_ids\": []}",
+  "latency_s": 6.515680140999393
+ },
+ "e6cd623f8d3c6cf0000b74d3a98f4127468eb72462e6f3434c98b33da5feba71": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"Reference [30] appears to be Giola et al., \\\"Learning Curves: A Novel Approach for Robustness Improvement of Load Forecasting\\\", which proposes using learning curves, so it fits a methodological citation for using learning curve analysis to evaluate the models. The match between [30] and that paper rests only on bibliographic entries and the 'Learning Curves' entity description; this paper's reference list beyond [13] is not visible.\", \"evidence_ids\": [\"Learning Curves: A Novel Approach for Robustness Improvement of Load Forecasting\", \"Learning Curves\", \"Learning curves are a widely adopted diagnostic tool in ML\", \"Learning Curves Analysis\", \"1\"]}",
+  "latency_s": 10.12468710199937
+ },
+ "836080dcdc8284058f3b55454df200a343df91f619a4ce4e38e374a6c0797067": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work is only identified by a generic placeholder title ('Learning Curves Analysis Reference [30]') with no authors, venue, or year, so I cannot identify it or assess its content. Without knowing the specific work, I cannot judge whether it substantiates the use of learning curve analysis for model evaluation.\", \"evidence_ids\": []}",
+  "latency_s": 3.6960218620006344
+ },
+ "49f3d6f0585c488c5b4e38afdc744027f16df8aafe657559ecb272e002421a19": {
+  "text": "{\"label\": \"partially_supports\", \"rationale\": \"The cited work's bibliographic record confirms it is a bibliometric study of Industry 4.0 in business management, matching the core of the statement. The only source for the claimed 'positive impact on decision-making' is the citing article's own Table 1 wording, so the cited work's content does not independently verify that part.\", \"evidence_ids\": [\"A Bibliometric Study with Statistical Patterns of Industry 4.0 on Business Management in the Decade\", \"Torres-Salazar et al., 2024\", \"1\"]}",
+  "latency_s": 5.918576576000305
+ },
+ "6e28eba24f5e045c5edc26178ab2e16fb65d1d297f119ab2a414e112a09d06e7": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"I do not know Torres-Salazar et al. (2024) well enough to confirm that it runs a descriptive bibliometric analysis of Industry 4.0's influence on business management or that it reports a positive effect on decision-making. No evidence text was provided to check the claim.\", \"evidence_ids\": []}",
+  "latency_s": 3.88449681900056
+ },
+ "e194aad109ad01b8e00611c0d1b9f64b0836efffa62cc2db06dbbb4a0bde1943": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"The graph identifies the cited work [30] as Pearl's 1988 work. Separate entities link Judea Pearl to 'Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference' (1988), which covers Bayesian networks for reasoning under uncertainty and so matches the statement, though most of the description of [30] comes from the citing text itself.\", \"evidence_ids\": [\"Pearl 1988 Bayesian Network\", \"Judea Pearl\", \"Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference\", \"Bayesian Network\", \"3\"]}",
+  "latency_s": 7.958154785999795
+ },
+ "f6a19156603bf93d53fb8162c031a696845609aeca86489b1a97ec83dbf399de": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"Pearl's 1988 book 'Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference' is the foundational work that develops Bayesian networks as probabilistic graphical models for reasoning under uncertainty. It directly substantiates both that Pearl developed BNs and their purpose.\", \"evidence_ids\": []}",
+  "latency_s": 4.664559034999911
+ },
+ "0d3d0a18ee07e3012fe42c5dc0e5f60bd3b676969e2c73072a792d2ade08c99f": {
+  "text": "{\"label\": \"partially_supports\", \"rationale\": \"The cited work [4] applies Jaccard and Cosine similarity in content-based filtering on an e-learning platform, which backs the first two similarity methods named in the sentence. Nothing in the evidence shows it covers SBERT or the hybrid SBERT\u2013Cosine approach, which is presumably supported by the other co-cited references.\", \"evidence_ids\": [\"Application of Recommendation System on E-Learning Platform Using Content-Based Filtering with Jaccard Similarity and Cosine Similarity Algorithms\", \"Content-Based Filtering\", \"3\"]}",
+  "latency_s": 6.408560216999831
+ },
+ "356f9cba8db40a8ff42d0d15d43eac6621d68013af1d9828faa20053f09a79d3": {
+  "text": "{\"label\": \"partially_supports\", \"rationale\": \"Going by its title, the cited work applies Jaccard and Cosine similarity in a content-based recommender, which supports the first two methods. Nothing indicates it covers the SBERT plus Cosine hybrid approach.\", \"evidence_ids\": []}",
+  "latency_s": 4.737661688999651
+ },
+ "921223a841d318555fab8c7f6478e9a291eaa66c7a1c8e11e5db6dda2728fcee": {
+  "text": "{\"label\": \"partially_supports\", \"rationale\": \"The cited work's title and bibliographic record confirm many-objective flexible job shop scheduling that accounts for energy and labor under dynamic electricity pricing, which matches the core of the statement. The remaining details (volatile wages, tailored algorithms, experiments showing cost-minimizing resource allocation) come only from the citing article's own wording, so they are not independently verified.\", \"evidence_ids\": [\"Energy- and Labor-Aware Flexible Job Shop Scheduling Under Dynamic Electricity Pricing: A Many-Objective Optimization Investigation\", \"Flexible Job Shop Scheduling\", \"1\"]}",
+  "latency_s": 6.636340691999976
+ },
+ "c64784eef10d4a88356276bc06a104432a5682874607a9766e5fdd4a67089f5c": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"Gong et al. (2019) propose a many-objective flexible job shop scheduling model that accounts for energy and labor under dynamic (time-of-use) electricity prices and varying worker wages. They solve it with a tailored algorithm and test it experimentally to reduce costs, which matches the citing sentence.\", \"evidence_ids\": []}",
+  "latency_s": 6.114734064000004
+ },
+ "c7fceed19946b9ae82ea8ac9e795179848db9caa3b411fe3aa8b6594a0943f6e": {
+  "text": "{\"label\": \"partially_supports\", \"rationale\": \"Several sources in the evidence describe Xu et al. (2019), 'Modeling Tabular data using Conditional GAN', as proposing CTGAN with conditional sampling for rare or imbalanced categories, which supports the second statement. For the first statement, the evidence only shows that CTGAN was benchmarked against Bayesian baselines; nothing links Xu et al. to copulas or presents it as a source on probabilistic joint-distribution methods.\", \"evidence_ids\": [\"Xu et al., 2019\", \"Xu et al. (14) CTGAN\", \"CTGAN\", \"Conditional Sampling\", \"Bayesian Networks\", \"1\", \"3\"]}",
+  "latency_s": 8.066670399000031
+ },
+ "b21af5f1c094e10ca1653b324ddcf0984c90713d18d36ac6724e0411a11f3388": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"Xu et al. (2019), 'Modeling Tabular Data using Conditional GAN' (NeurIPS), introduced CTGAN, which uses a conditional generator and training-by-sampling to handle imbalanced discrete columns and rare categories. The paper also reviews and benchmarks earlier statistical synthesizers, including Bayesian-network approaches (CLBN, PrivBN), which supports its use as a citation for prior probabilistic methods learning joint distributions.\", \"evidence_ids\": []}",
+  "latency_s": 4.450699629000155
+ },
+ "6365fed2412c2e1650142cedd94fa20fad61d294a91eef9ad835c2f563dede86": {
+  "text": "{\"label\": \"supports\", \"rationale\": \"Reference [39] is Bouhadi et al. (2022), 'Using a Fuzzy-Bayesian Approach for Predictive Analysis of Delivery Delay Risk', which applies the fuzzy-Bayesian approach to delivery delay risk in logistics. This substantiates the claim that the FB approach has been used in logistics.\", \"evidence_ids\": [\"1\", \"FB Approach Applied in Logistics\", \"Fuzzy-Bayesian Approach\", \"Using a Fuzzy-Bayesian Approach for Predictive Analysis of Delivery Delay Risk\"]}",
+  "latency_s": 4.294009655000082
+ },
+ "f2a8462a28d19c656de0781c0e03cc1b60fab0ddc0c1a990e377829c609c6ec2": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work is identified only by a generic placeholder title ('FB Approach Applied in Logistics'), so I cannot pin down which publication it is or verify from my own knowledge that it applies a fuzzy-Bayesian approach to logistics. With no evidence provided, I cannot make a reliable judgment.\", \"evidence_ids\": []}",
+  "latency_s": 3.7476221930000975
+ },
+ "ede0168deefd37b62585f3b1c56f76a3fa1c97568c92ff930e44b1a46cb6820e": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The bibliography of the citing article (MVML 120) lists [20] as Gu, Zhu and Cai (2009), 'Evaluation Measures of the Classification Performance of Imbalanced Data Sets', not a work by Zhao, and the knowledge graph itself notes that the 'Zhao' label is unsupported. Beyond the title, no evidence describes the content of the actual [20], so its support for using the confusion matrix cannot be confirmed.\", \"evidence_ids\": [\"2\", \"Reference [20] on Confusion Matrix\", \"Zhao, Confusion Matrix Reference [20]\"]}",
+  "latency_s": 7.931299808999938
+ },
+ "9abfc3c814eacfa6c7025e723207138bcdf416ec4e0e5b3470351b1a389d6be9": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work is identified only as 'Zhao, Confusion Matrix Reference [20]', with no title, venue, or year, so I cannot identify it or confirm what it says about confusion matrices. Citing a reference for using a confusion matrix in evaluation is plausible, but I cannot verify it from my knowledge.\", \"evidence_ids\": []}",
+  "latency_s": 3.8608040190001702
+ },
+ "2d7e9246c2c131704ec3e504697b58511ff0f084aaa4d6d8219011dacc4040ec": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The only description of Ref [3] comes from the citing article's own sentences (chunk 1 and the derived graph entries), so it restates the claim rather than showing what Ref [3] contains. No passage, abstract or table 3 from the cited work is provided to confirm the 1972 DARPA origin or the summary of technology characteristics.\", \"evidence_ids\": [\"Ref [3] MANET Origins and Communication Technologies\", \"MANET dates back to the 1972 DARPA Packet Radio Network\", \"1\"]}",
+  "latency_s": 6.05866160000005
+ },
+ "a1c9b05a5a1f649644351729ec543c82f88f60ebe4a20b7e949b9d5ca80ddf30": {
+  "text": "{\"label\": \"insufficient_evidence\", \"rationale\": \"The cited work is identified only by a generic placeholder title ('MANET Origins and Communication Technologies'), so I cannot identify the specific publication or check whether it discusses the 1972 DARPA PRNet origin or contains a table 3 comparing bit rate, frequency, range and power consumption. The DARPA PRNet history is commonly cited in MANET surveys, but that does not establish what this particular reference contains.\", \"evidence_ids\": []}",
+  "latency_s": 4.179023790000429
+ }
+}

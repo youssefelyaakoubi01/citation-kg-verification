@@ -1,0 +1,27 @@
+# LaTeX build products (the PDF is kept)
+*.aux
+*.fls
+*.fdb_latexmk
+*.out
+*.blg
+*.synctex.gz
+/*.log
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+# LightRAG runtime state never published
+LightRAG/.env
+LightRAG/.env.backup.*
+LightRAG/rag_storage/
+LightRAG/inputs/
+LightRAG/output/
+LightRAG/.venv/
+LightRAG/lightrag_webui/node_modules/
+LightRAG/examples/knowledge_graph.html
+# Working-folder material not part of the release
+Screenshot*
+archive/
+RECAP_modifications.md
+QuestionTests/

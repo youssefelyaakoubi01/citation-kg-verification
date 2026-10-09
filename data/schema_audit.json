@@ -1,0 +1,137 @@
+{
+  "per_pass": {
+    "initial": {
+      "records": 467,
+      "entities": 12716,
+      "relations": 14419,
+      "entity_names": 12716,
+      "entity_names_off_schema": 0,
+      "relations_first_keyword_vocab": 14419,
+      "relation_pairs": 14407,
+      "json_repaired": 1,
+      "relations_endpoint_missing_same_response": 2,
+      "chunks": 467
+    },
+    "gleaning": {
+      "records": 467,
+      "entities": 6946,
+      "relations": 10115,
+      "entity_names": 6946,
+      "entity_names_off_schema": 0,
+      "relations_first_keyword_vocab": 10115,
+      "relations_endpoint_missing_same_response": 9571,
+      "relation_pairs": 10114,
+      "chunks": 467
+    }
+  },
+  "total": {
+    "records": 934,
+    "entities": 19662,
+    "relations": 24534,
+    "entity_names": 19662,
+    "entity_names_off_schema": 0,
+    "relations_first_keyword_vocab": 24534,
+    "relation_pairs": 24521,
+    "json_repaired": 1,
+    "relations_endpoint_missing_same_response": 9573,
+    "chunks": 467
+  },
+  "per_chunk_union": {
+    "chunks": 467,
+    "entity_records": 19662,
+    "entity_names": 19470,
+    "relation_records": 24534,
+    "relation_pairs": 24424,
+    "entity_names_kept": 19470,
+    "entity_records_kept": 19662,
+    "relation_pairs_kept": 24422,
+    "relation_records_kept": 24532,
+    "relation_records_endpoint_missing": 2,
+    "relation_pairs_endpoint_missing": 2
+  },
+  "types_initial": {
+    "paper": 3291,
+    "methodology": 2662,
+    "concept": 1672,
+    "venue": 1309,
+    "author": 1164,
+    "identifier": 1044,
+    "claim": 965,
+    "organization": 357,
+    "dataset": 158,
+    "other": 94
+  },
+  "types_gleaning": {
+    "author": 2535,
+    "concept": 1982,
+    "methodology": 1199,
+    "claim": 410,
+    "other": 184,
+    "organization": 174,
+    "paper": 172,
+    "venue": 161,
+    "dataset": 67,
+    "identifier": 62
+  },
+  "off_schema_types": {
+    "initial": {},
+    "gleaning": {}
+  },
+  "first_keywords": {
+    "initial": {
+      "cites": 2407,
+      "related_to": 2004,
+      "uses_method": 1893,
+      "addresses": 1880,
+      "published_in": 1432,
+      "authored_by": 1256,
+      "supports": 1175,
+      "has_identifier": 1025,
+      "proposes": 481,
+      "affiliated_with": 273,
+      "compares_with": 261,
+      "extends": 173,
+      "uses_dataset": 159
+    },
+    "gleaning": {
+      "related_to": 2986,
+      "authored_by": 2607,
+      "addresses": 2232,
+      "uses_method": 940,
+      "supports": 339,
+      "proposes": 272,
+      "cites": 189,
+      "published_in": 152,
+      "compares_with": 139,
+      "extends": 78,
+      "affiliated_with": 67,
+      "has_identifier": 58,
+      "uses_dataset": 53,
+      "contradicts": 3
+    }
+  },
+  "no_vocab_first_tokens": {
+    "initial": {},
+    "gleaning": {}
+  },
+  "unknown_endpoint_names": {
+    "Mold Machanical Dimensions": 1,
+    "Injection Machine Selection Placeholder": 1
+  },
+  "vocabulary_usage": {
+    "cites": 2596,
+    "supports": 1514,
+    "contradicts": 3,
+    "authored_by": 3863,
+    "affiliated_with": 340,
+    "published_in": 1584,
+    "has_identifier": 1083,
+    "proposes": 753,
+    "uses_method": 2833,
+    "uses_dataset": 212,
+    "extends": 251,
+    "compares_with": 400,
+    "addresses": 4112,
+    "related_to": 4990
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "ego": {
+    "citing": "Hybrid Post-Quantum Signatures for Hyperledger Fabric",
+    "cited": [
+      "FIPS 204",
+      "PQFabric",
+      "Ref [1] Hyperledger Fabric",
+      "Abbas et al. [9]",
+      "Lechhab Ouadrassi et al. [36] Fabric Configuration Performance Study",
+      "Melo et al. [35] Stochastic Petri Net Model of Fabric",
+      "NIST FIPS 204"
+    ],
+    "claims": [
+      "FIPS 204 defines three ML-DSA parameter sets for NIST categories 2, 3 and 5",
+      "FIPS 204 defines three ML-DSA parameter sets",
+      "Fabric Internals Modification for PQC",
+      "Deep Fabric-internal PQC integration extends protection beyond the application layer",
+      "Fabric Performance Depends On Architecture And Configuration Beyond Cryptography",
+      "Fabric Post-Quantum Migration Is Complex",
+      "Fabric Internals Modification for PQC",
+      "Abbas et al. modify Fabric's credential-generation process",
+      "Fabric performance is highly configuration-sensitive",
+      "Endorsement policy, block size and peer count significantly affect Fabric latency and throughput",
+      "Fabric performance is highly configuration-sensitive",
+      "Block size, batch timeout, arrival rate and commit capacity affect Fabric response time and throughput",
+      "Organizations should align PQC migration roadmaps with NIST-standardized algorithms",
+      "ML-DSA is specified in NIST FIPS 204 as a module-lattice signature standard"
+    ],
+    "sentences": {
+      "FIPS 204": "FIPS 204 defines three ML-DSA parameter sets corresponding to NIST security-strength categories 2, 3, and 5: ML-DSA-44, ML-DSA-65, and ML-DSA-87, respectively [4].<SEP>\"FIPS 204 defines three ML-DSA parameter sets corresponding to NIST security-strength categories 2, 3, and 5: ML-DSA-44, ML-DSA-65, and ML-DSA-87, respectively [4].\" A later sentence also cites [4]: \"ML-DSA-65 is the Module-Lattice-Based Digital Signature Algorithm parameter set corresponding to NIST security-strength category 3 in FIPS 204 [4].\"",
+      "PQFabric": "The relation between Hybrid Post-Quantum Signatures for Hyperledger Fabric and PQFabric is one of contrast between two different points for integrating post-quantum cryptography (PQC) into Hyperledger Fabric. The paper on Hybrid Post-Quantum Signatures for Hyperledger Fabric lists PQFabric [8] in Table 1 as related work on post-quantum blockchain and Fabric integration, and positions its own application-layer approach against PQFabric's deeper, Fabric-internal modifications.\n\nPQFabric integrates hybrid post-quantum mechanisms directly into Fabric's cryptographic and credential-management stack. It modifies internal components such as the Blockchain Cryptographic Service Provider (BCCSP) and the Membership Service Provider (MSP). The paper also distinguishes PQFabric from the work of Abbas et al. [9], which instead extends the identity-provisioning process by modifying the certificate-generation tool (Cryptogen) to embed post-quantum key material in Fabric credentials. The paper states that its own approach \"differs fundamentally\" from both, because it operates at the application layer and does not alter Fabric's cryptographic stack.\n\nIn this comparison, the paper raises several concerns about PQFabric. Changing Fabric's cryptographic components may affect compatibility, maintainability, and deployment complexity. The paper also notes that PQFabric does not fully address system-level benchmarking, including payload-size sensitivity, resource monitoring, block-size overhead, and statistical validation. At the same time, the paper acknowledges a trade-off: because PQFabric's integration is deeper, the paper's application-layer approach offers a narrower scope of quantum resistance.",
+      "Ref [1] Hyperledger Fabric": "\"Its modular architecture, membership-based identity model, endorsement policies, and configurable ordering service make it attractive for consortium and institutional deployments [1].\" Also: \"It depends on the execute\u2013order\u2013validate architecture, endorsement policies, ordering configuration, block size, batch timeout, state database, workload characteristics, peer topology, and available resources [1].\"",
+      "Abbas et al. [9]": "PQFabric [8] integrates hybrid post-quantum mechanisms within Fabric's cryptographic and credential-management stack, whereas Abbas et al. [9] extend the identity-provisioning process to incorporate post-quantum key material into Fabric credentials.<SEP>The paper contrasts its application-layer approach with the credential-level post-quantum key provisioning in Abbas et al.<SEP>Listed in Table 1 as related work on post-quantum Hyperledger Fabric integration covering KEMs and signatures.<SEP>Abbas et al. [9] introduce post-quantum key material through modifications to the credential-generation/X.509 process, requiring changes to organizational credential provisioning.<SEP>The paper compares its approach with the credential-level modifications made by Abbas et al.<SEP>Abbas et al. [9] adopt a deeper identity-oriented integration by incorporating post-quantum key material through modifications to the credential-generation/X.509 process.<SEP>The paper contrasts its approach, which leaves X.509/MSP unchanged, with the credential-level modification of Abbas et al.",
+      "Lechhab Ouadrassi et al. [36] Fabric Configuration Performance Study": "Lechhab Ouadrassi et al. empirically demonstrated that endorsement policy, block size, and peer count significantly affect Fabric latency and throughput [36], motivating the need to control these parameters when evaluating cryptographic changes.",
+      "Melo et al. [35] Stochastic Petri Net Model of Fabric": "Melo et al. model Fabric performance using stochastic Petri nets and show that block size, batch timeout, arrival rate, and commit capacity can substantially affect mean response time and throughput [35].",
+      "NIST FIPS 204": "Its standardized version, ML-DSA, is specified in NIST FIPS 204 and provides a module-lattice-based digital signature standard for post-quantum authentication [4].<SEP>This work uses ML-DSA-65 as specified in NIST FIPS 204 [4], rather than pre-standardization Dilithium variants."
+    }
+  },
+  "overview": {
+    "document": "Symbiotic_Combination_of_a_Bayesian_Network_and_Fu.pdf",
+    "nodes": 393,
+    "edges": 542,
+    "nodes_all": 440,
+    "edges_all": 564,
+    "components_all": 26,
+    "types": {
+      "concept": 92,
+      "paper": 76,
+      "author": 73,
+      "methodology": 62,
+      "claim": 38,
+      "venue": 29,
+      "organization": 11,
+      "other": 8,
+      "identifier": 3,
+      "dataset": 1
+    },
+    "labelled": [
+      "Fuzzy Logic"
+    ]
+  }
+}

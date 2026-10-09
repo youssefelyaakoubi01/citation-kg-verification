@@ -1,0 +1,13 @@
+ docs/ProgramingWithCore.md                       |  47 +++-
+ env.example                                      |   9 +
+ lightrag/constants.py                            |   6 +
+ lightrag/kg/noop_vector_db_impl.py               |   7 +-
+ lightrag/lightrag.py                             |  31 +++
+ lightrag/operate.py                              | 267 +++++++++++++++++++----
+ lightrag/tools/README_REBUILD_VDB.md             |   5 +-
+ pyproject.toml                                   |   1 +
+ tests/kg/noop_impl/test_noop_vector_storage.py   | 125 +++++++++++
+ tests/llm/test_query_cache_kg_chunk_selection.py |  25 +++
+ tests/test_operate_entity_chunk_selection.py     |  27 +++
+ uv.lock                                          | 225 +++++++++++++++++++
+ 12 files changed, 731 insertions(+), 44 deletions(-)
