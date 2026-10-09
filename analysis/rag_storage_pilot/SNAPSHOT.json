@@ -1,0 +1,5 @@
+{
+  "copied_at": "2026-10-09T15:19:20",
+  "source": "LightRAG/rag_storage",
+  "note": "Copy of the server working directory after ingestion. The in-process pilot (analysis/pilot_verification.py) later appended its 50 query keyword extractions to kv_store_llm_response_cache.json; graph_stats.py counts only the cache entries created before copied_at, i.e. those produced through the server."
+}

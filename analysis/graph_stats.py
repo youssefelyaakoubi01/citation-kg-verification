@@ -35,14 +35,17 @@ def md5(path):
     return h.hexdigest()
 
 
-def log_last_timestamp() -> dt.datetime:
-    """Timestamp of the last timestamped line of the server log."""
-    ts_re = re.compile(r"^(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}),\d+ - ")
-    for line in reversed(LOG.read_text(errors="replace").splitlines()):
-        m = ts_re.match(line)
-        if m:
-            return dt.datetime.strptime(m.group(1), "%Y-%m-%d %H:%M:%S")
-    raise RuntimeError(f"no timestamped line in {LOG}")
+def cache_cutoff() -> dt.datetime | None:
+    """Creation time after which cache entries are not server responses.
+
+    A frozen copy of the storage carries a SNAPSHOT.json marker with the time
+    of the copy; entries created later were added by the in-process pilot.
+    The live server directory has no marker and every entry counts.
+    """
+    marker = STORAGE / "SNAPSHOT.json"
+    if not marker.is_file():
+        return None
+    return dt.datetime.fromisoformat(json.loads(marker.read_text())["copied_at"])
 
 
 def local(ts: int | float | None) -> str:
@@ -205,8 +208,9 @@ def main() -> None:
 
     # ------------------------------------------------------------ cache --
     cache = load_kv("llm_response_cache")
-    log_end = log_last_timestamp()
-    cache = {k: r for k, r in cache.items() if dt.datetime.fromtimestamp(int(r["create_time"])) <= log_end}
+    cutoff = cache_cutoff()
+    if cutoff is not None:
+        cache = {k: r for k, r in cache.items() if dt.datetime.fromtimestamp(int(r["create_time"])) <= cutoff}
     by_type = Counter(r.get("cache_type") for r in cache.values())
     extract_chunks = {r.get("chunk_id") for r in cache.values() if r.get("cache_type") == "extract"}
     S["cache"] = dict(total=len(cache), by_type=dict(by_type), extract_chunks=len(extract_chunks),

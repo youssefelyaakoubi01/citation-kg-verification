@@ -42,7 +42,7 @@ python figures.py            # Figs. 3–6, 8 (figures/*.pdf, *.png)
 python pilot_verification.py --summarize-only   # Table XII, data/numbers_pilot.tex, data/annotation_sheet.csv (from data/pilot_results.json, no LLM call)
 ```
 
-`common.py` locates the storage automatically: it uses `LightRAG/rag_storage/` when a live server directory exists, otherwise `analysis/rag_storage_pilot/`. Cached LLM responses are counted only up to the last timestamp of the server log, because the frozen copy also holds the 50 keyword extractions the in-process pilot added afterwards. Re-running the pilot with new LLM calls (`python pilot_verification.py`) requires the Claude Agent SDK binding and a Claude subscription; the stored `data/pilot_llm_cache.json` makes the recorded run replayable.
+`common.py` locates the storage automatically: it uses `LightRAG/rag_storage/` when a live server directory exists, otherwise `analysis/rag_storage_pilot/`. In the frozen copy, cached LLM responses are counted only up to the copy time recorded in `analysis/rag_storage_pilot/SNAPSHOT.json`, because the in-process pilot later added its 50 keyword extractions to that cache. Re-running the pilot with new LLM calls (`python pilot_verification.py`) requires the Claude Agent SDK binding and a Claude subscription; the stored `data/pilot_llm_cache.json` makes the recorded run replayable.
 
 Then build the article:
 
